@@ -57,6 +57,13 @@
   };
 
 
+  services.pcscd.enable = true;
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryFlavor = "gnome3";
+    # enableSSHSupport = true;
+  };
+
   # Configure keymap in X11
   services.xserver.layout = "fr";
   # services.xserver.xkbOptions = "eurosign:e";
@@ -71,6 +78,7 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
   virtualisation.docker.enable = true;
+
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   # users.users.jane = {
@@ -91,6 +99,8 @@
   environment.systemPackages = with pkgs; [
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     wget
+    pinentry-gnome
+    pinentry
   ];
   environment.pathsToLink = [ "/share/zsh" ];
 
