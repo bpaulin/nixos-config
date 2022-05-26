@@ -51,6 +51,10 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
+  xdg.portal = {
+    # need to set enable-webrtc-pipewire-capturer in chrome
+    enable = true;
+  };
 
 
   # Configure keymap in X11
