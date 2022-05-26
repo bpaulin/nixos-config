@@ -10,6 +10,7 @@
   nixpkgs.config.allowUnfree = true;
   imports = [
     ./tty/git.nix
+    ./tty/gh.nix
     ./tty/shell.nix
     ./tty/ssh.nix
     ./tty/fun.nix
