@@ -14,6 +14,10 @@
       # to have touchpad and mouse behave the same way
       natural-scroll = false;
     };
+    "org/gnome/shell/app-switcher" = {
+      # Limit switcher to current workspace.
+      current-workspace-only = true;
+    };
     "org/gnome/shell" = {
       # apps on dock
       favorite-apps = [
@@ -22,7 +26,7 @@
         # chrome
         "google-chrome.desktop"
         # terminal
-        "terminator.desktop"
+        "org.gnome.Console.desktop"
       ];
     };
   };
