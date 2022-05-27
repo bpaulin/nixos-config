@@ -6,5 +6,6 @@
     cowsay
     asciiquarium
     sl
+    figlet
   ];
 }
