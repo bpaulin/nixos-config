@@ -25,6 +25,7 @@
     ./dev/python.nix
     ./dev/golang.nix
     ./dev/java.nix
+    ./dev/nodejs.nix
     ./dev/ruby.nix
     ./work/network.nix
     ./work/onepromo.nix
