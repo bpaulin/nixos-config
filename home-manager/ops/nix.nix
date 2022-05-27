@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     nixpkgs-fmt
+    nixos-option
     vgo2nix
   ];
   programs = {

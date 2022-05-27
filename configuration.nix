@@ -101,10 +101,15 @@
     wget
     pinentry-gnome
     pinentry
+    openssl
   ];
   environment.pathsToLink = [ "/share/zsh" ];
 
   programs.zsh.enable = true;
+  security.pki.certificateFiles = [
+    # can I push this?
+    /etc/nixos/chain_bundle.crt
+  ];
 
 
   # Some programs need SUID wrappers, can be configured further or are
