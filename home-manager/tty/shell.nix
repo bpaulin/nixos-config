@@ -15,6 +15,7 @@
     dtrx
     unzip
     envsubst
+    glow
   ];
 
   home =

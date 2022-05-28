@@ -7,5 +7,6 @@
     asciiquarium
     sl
     figlet
+    terminal-parrot
   ];
 }
