@@ -11,5 +11,6 @@ in
 
   home.packages = with pkgs; [
     ruby-with-my-packages
+    bundix
   ];
 }
