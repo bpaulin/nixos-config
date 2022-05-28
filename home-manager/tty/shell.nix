@@ -14,6 +14,7 @@
     ncdu
     dtrx
     unzip
+    envsubst
   ];
 
   home =
@@ -33,6 +34,7 @@
     };
     jq.enable = true;
     htop.enable = true;
+    direnv.enable = true;
     zsh = {
       enable = true;
       enableAutosuggestions = true;

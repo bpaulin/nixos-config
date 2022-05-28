@@ -1,4 +1,5 @@
 private/
-.private_env.sh
+.private_env*.sh
 *.iso
 chain_bundle.crt
+/etc

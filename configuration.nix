@@ -32,6 +32,26 @@
   networking.useDHCP = false;
   networking.interfaces.enp0s31f6.useDHCP = true;
   networking.interfaces.wlp2s0.useDHCP = true;
+  networking.networkmanager = {
+    enable = true;
+    plugins = [
+      pkgs.networkmanager-sstp
+    ];
+  };
+  environment.etc = {
+    "NetworkManager/system-connections/work_vpn.nmconnection" = {
+      user = "root";
+      group = "root";
+      source = ./etc/work_vpn.nmconnection;
+      mode = "0600";
+    };
+    "NetworkManager/system-connections/home_wifi.nmconnection" = {
+      user = "root";
+      group = "root";
+      source = ./etc/home_wifi.nmconnection;
+      mode = "0600";
+    };
+  };
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";

@@ -1,19 +1,11 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    networkmanager-sstp
-  ];
+  # home.packages = with pkgs; [
+  #   networkmanager-sstp
+  # ];
 
   home.file = {
-    # File exporting
-    # PROXY_HOST
-    # PROXY_PORT
-    # LDAP_USER
-    # LDAP_PASSWORD
-    # WORK_DOCKER_REGISTRY
-    # VAULT_TOKEN
-    # VAULT_ADRESS
-    ".private_env.sh".source = ./.private_env.sh;
+    ".private_env.sh".source = ./../../.private_env_run.sh;
     "setproxy.sh".source = ./setproxy.sh;
   };
   programs = {
