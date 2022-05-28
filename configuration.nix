@@ -37,6 +37,18 @@
     plugins = [
       pkgs.networkmanager-sstp
     ];
+    dispatcherScripts = [
+      {
+        source = pkgs.writeText "upHook" ''
+
+          if [ "$2" = "vpn-up" ]; then
+            ${pkgs.unixtools.ifconfig}/bin/ifconfig "$1" mtu 1390 up
+          fi
+
+    '';
+        type = "basic";
+      }
+    ];
   };
   environment.etc = {
     "NetworkManager/system-connections/work_vpn.nmconnection" = {
