@@ -29,3 +29,9 @@ Clean unused configs:
 ```bash
 sudo nix-collect-garbage -d
 ```
+
+List installed packages (must be a better way)
+
+```
+nix-store -q --references /var/run/current-system/sw | cut -d'-' -f2- | grep -v '\-man' | grep -v '\-doc' | grep -v '\-info' | sort > packages.txt
+```
