@@ -1,4 +1,5 @@
 # Vars used on nixos build
 export WORK_VPN_GW='REDACTED'
+export WORK_WIFI_SSID='REDACTED'
 export HOME_WIFI_SSID='REDACTED'
 export HOME_WIFI_PSK='REDACTED'
