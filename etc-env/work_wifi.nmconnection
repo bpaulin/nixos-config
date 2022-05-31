@@ -1,5 +1,5 @@
 [connection]
-id=work
+id=$WORK_WIFI_SSID
 uuid=c2916d12-b7b6-44ec-aa76-2ef05bec0273
 type=wifi
 permissions=

@@ -1,5 +1,5 @@
 [connection]
-id=vpnc4
+id=vpn
 uuid=7b9ab846-3261-46ea-aeb5-381b8db71237
 type=vpn
 autoconnect=false
