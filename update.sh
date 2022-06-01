@@ -20,4 +20,4 @@ cat .private_env_run.sh | sed "s/=$VALUE.*/='REDACTED'/" > .private_env_run.dist
 cat .private_env_build.sh | sed "s/=$VALUE.*/='REDACTED'/" > .private_env_build.dist
 
 # only one thing to do now...
-sudo nixos-rebuild switch
+sudo -E nixos-rebuild switch

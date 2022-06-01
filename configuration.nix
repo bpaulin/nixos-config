@@ -151,8 +151,7 @@
 
   programs.zsh.enable = true;
   security.pki.certificateFiles = [
-    # can I push this?
-    /etc/nixos/chain_bundle.crt
+    ./etc/chain_bundle.crt
   ];
 
 
