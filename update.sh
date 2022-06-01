@@ -9,7 +9,11 @@ mkdir -p etc
 envsubst --no-unset --no-empty \
     -i etc-env/work_vpn.nmconnection -o etc/work_vpn.nmconnection
 envsubst --no-unset --no-empty \
+    -i etc-env/work_wifi.nmconnection -o etc/work_wifi.nmconnection
+envsubst --no-unset --no-empty \
     -i etc-env/home_wifi.nmconnection -o etc/home_wifi.nmconnection
+envsubst --no-unset --no-empty \
+    -i etc-env/phone_wifi.nmconnection -o etc/phone_wifi.nmconnection
 
 # update env structure
 cat .private_env_run.sh | sed "s/=$VALUE.*/='REDACTED'/" > .private_env_run.dist

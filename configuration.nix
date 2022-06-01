@@ -63,6 +63,18 @@
       source = ./etc/home_wifi.nmconnection;
       mode = "0600";
     };
+    "NetworkManager/system-connections/work_wifi.nmconnection" = {
+      user = "root";
+      group = "root";
+      source = ./etc/work_wifi.nmconnection;
+      mode = "0600";
+    };
+    "NetworkManager/system-connections/phone_wifi.nmconnection" = {
+      user = "root";
+      group = "root";
+      source = ./etc/phone_wifi.nmconnection;
+      mode = "0600";
+    };
   };
 
   # Configure network proxy if necessary
