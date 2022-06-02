@@ -16,7 +16,7 @@
     ./tty/fun.nix
     ./display/gnome.nix
     ./display/chrome.nix
-    ./display/terminator.nix
+    ./display/terminal.nix
     ./display/vscode.nix
     ./ops/nix.nix
     ./ops/cloud.nix

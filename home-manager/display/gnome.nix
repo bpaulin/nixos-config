@@ -7,6 +7,8 @@
     gnome.dconf-editor
     # to generate nixconfig from dconf
     dconf2nix
+    # to change settings manually
+    gnome.gnome-tweaks
   ];
 
   dconf.settings = {

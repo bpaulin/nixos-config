@@ -16,6 +16,7 @@
     unzip
     envsubst
     glow
+    busybox
   ];
 
   home =
@@ -36,6 +37,7 @@
     jq.enable = true;
     htop.enable = true;
     direnv.enable = true;
+    tmux.enable = true;
     zsh = {
       enable = true;
       enableAutosuggestions = true;
