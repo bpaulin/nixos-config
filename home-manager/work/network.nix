@@ -5,7 +5,7 @@
   # ];
 
   home.file = {
-    ".private_env.sh".source = ./../../.private_env_run.sh;
+    ".private_env.sh".source = ./../../.private_env.sh;
     "setproxy.sh".source = ./setproxy.sh;
   };
   programs = {

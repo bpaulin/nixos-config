@@ -1,3 +1,12 @@
+# Vars sources on run and used on nixos build
+export PROXY_HOST='REDACTED'
+export PROXY_PORT='REDACTED'
+export LDAP_USER='REDACTED'
+export LDAP_PASSWORD='REDACTED'
+export WORK_DOCKER_REGISTRY='REDACTED'
+export VAULT_TOKEN='REDACTED'
+export VAULT_ADRESS='REDACTED'
+
 # Vars used on nixos build
 export WORK_VPN_GW='REDACTED'
 export WORK_WIFI_SSID='REDACTED'
