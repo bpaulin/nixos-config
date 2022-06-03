@@ -83,10 +83,10 @@
 
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  # };
+  console = {
+    #  font = "Lat2-Terminus16";
+    keyMap = "fr";
+  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -150,9 +150,9 @@
   environment.pathsToLink = [ "/share/zsh" ];
 
   programs.zsh.enable = true;
-  security.pki.certificateFiles = [
-    ./etc/chain_bundle.crt
-  ];
+  #security.pki.certificateFiles = [
+  #  ./etc/chain_bundle.crt
+  #];
 
 
   # Some programs need SUID wrappers, can be configured further or are

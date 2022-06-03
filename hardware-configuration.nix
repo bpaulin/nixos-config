@@ -10,24 +10,33 @@
     ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "sd_mod" "rtsx_pci_sdmmc" ];
-  boot.initrd.kernelModules = [ ];
+  boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-intel" ];
   boot.extraModulePackages = [ ];
 
+  boot.initrd.luks.devices = {
+    root = {
+      name = "root";
+      device = "/dev/disk/by-uuid/4ad2d8e9-9eb8-4e98-82d4-3c0a9044baff";
+      preLVM = true;
+      allowDiscards = true;
+    };
+  };
+
   fileSystems."/" =
     {
-      device = "/dev/disk/by-uuid/7ea92c84-f92e-4954-9f75-dd670ae4c0d1";
+      device = "/dev/disk/by-uuid/940e864e-2fed-4b7f-8a6c-ceb82976c9ce";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
     {
-      device = "/dev/disk/by-uuid/216A-6E7F";
+      device = "/dev/disk/by-uuid/4BEB-FF85";
       fsType = "vfat";
     };
 
   swapDevices =
-    [{ device = "/dev/disk/by-uuid/914af317-1267-49e6-bde1-4888a43cccc7"; }];
+    [{ device = "/dev/disk/by-uuid/7410541c-e754-47d3-b70b-01b92fd28396"; }];
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
   hardware.cpu.intel.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
