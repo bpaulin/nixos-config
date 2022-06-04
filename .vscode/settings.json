@@ -1,3 +1,7 @@
 {
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    // don't touch these files
+    "files.associations": {
+        "**/hardware-configuration.nix": "plaintext"
+    }
 }
