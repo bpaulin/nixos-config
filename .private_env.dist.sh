@@ -8,6 +8,7 @@ export VAULT_TOKEN='REDACTED'
 export VAULT_ADRESS='REDACTED'
 
 # Vars used on nixos build
+export PROXY_PAC='REDACTED'
 export WORK_VPN_GW='REDACTED'
 export WORK_WIFI_SSID='REDACTED'
 export HOME_WIFI_SSID='REDACTED'

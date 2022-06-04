@@ -26,39 +26,12 @@
   networking.useDHCP = false;
   networking.networkmanager = {
     enable = true;
-    plugins = [
-      pkgs.networkmanager-sstp
-    ];
-    dispatcherScripts = [
-      {
-        source = pkgs.writeText "upHook" ''
-
-          if [ "$2" = "vpn-up" ]; then
-            ${pkgs.unixtools.ifconfig}/bin/ifconfig "$1" mtu 1390 up
-          fi
-
-    '';
-        type = "basic";
-      }
-    ];
   };
   environment.etc = {
-    "NetworkManager/system-connections/work_vpn.nmconnection" = {
-      user = "root";
-      group = "root";
-      source = ./etc/work_vpn.nmconnection;
-      mode = "0600";
-    };
     "NetworkManager/system-connections/home_wifi.nmconnection" = {
       user = "root";
       group = "root";
       source = ./etc/home_wifi.nmconnection;
-      mode = "0600";
-    };
-    "NetworkManager/system-connections/work_wifi.nmconnection" = {
-      user = "root";
-      group = "root";
-      source = ./etc/work_wifi.nmconnection;
       mode = "0600";
     };
     "NetworkManager/system-connections/phone_wifi.nmconnection" = {
@@ -162,13 +135,6 @@
   # networking.firewall.enable = false;
 
   nixpkgs.config.allowUnfree = true;
-
-  security.sudo.extraConfig = "
-    Defaults env_keep += http_proxy
-    Defaults env_keep += https_proxy
-    Defaults env_keep += no_proxy
-    Defaults env_keep += CURL_NIX_FLAGS
-  ";
 
   home-manager.users.bpaulin = { pkgs, ... }: {
     imports = [ ./home-manager/home.nix ];

@@ -2,6 +2,9 @@
 
 {
   networking.hostName = "oldc4";
+  imports = [
+    ./../../flavors/work/main.nix
+  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -15,14 +18,7 @@
     };
   };
 
-  console = {
-    keyMap = "fr";
-  };
-
-  # Enable the GNOME Desktop Environment.
-  services.xserver.enable = true;
+  console.keyMap = "fr";
   services.xserver.layout = "fr";
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
 }
 

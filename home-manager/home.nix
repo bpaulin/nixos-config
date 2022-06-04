@@ -28,7 +28,5 @@
     ./dev/nodejs.nix
     ./dev/ruby.nix
     ./dev/groovy.nix
-    ./work/network.nix
-    ./work/onepromo.nix
   ];
 }
