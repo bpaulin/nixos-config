@@ -16,7 +16,6 @@
     unzip
     envsubst
     glow
-    busybox
   ];
 
   home =

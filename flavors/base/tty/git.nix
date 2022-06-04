@@ -10,7 +10,13 @@
       enable = true;
       userName = "Bruno Paulin";
       userEmail = "brunopaulin@bpaulin.net";
-      delta.enable = true;
+      delta = {
+        enable = true;
+        options = {
+          light = false;
+          navigate = true;
+        };
+      };
 
       ignores = [
         "bpignore*"
