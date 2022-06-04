@@ -9,5 +9,5 @@ repository:
   has_wiki: false
   has_downloads: true
 
-  default_branch: develop
+  default_branch: main
   delete_branch_on_merge: true
