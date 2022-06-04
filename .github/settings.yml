@@ -1,0 +1,13 @@
+repository:
+  name: nixos-config
+  description: My nixos config
+  topics: nix, nixos, dotfiles
+
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: true
+
+  default_branch: develop
+  delete_branch_on_merge: true
