@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     nixpkgs-fmt
     nixos-option
+    rnix-lsp
     vgo2nix
   ];
   programs = {
