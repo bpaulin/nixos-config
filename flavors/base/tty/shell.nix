@@ -16,6 +16,9 @@
     unzip
     envsubst
     glow
+    ripgrep
+    tldr
+    httpie
   ];
 
   home =
