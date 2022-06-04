@@ -3,24 +3,18 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
 { config, pkgs, ... }:
-# let
-#   home-manager = builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-21.11.tar.gz";
-# in
-
 {
   imports =
     [
       # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./machines/local/hardware-configuration.nix
+      ./machines/local/configuration.nix
       # (import "${home-manager}/nixos")
       <home-manager/nixos>
     ];
 
-  # Use the systemd-boot EFI boot loader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "oldc4"; # Define your hostname.
+
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Set your time zone.
@@ -30,8 +24,6 @@
   # Per-interface useDHCP will be mandatory in the future, so this generated config
   # replicates the default behaviour.
   networking.useDHCP = false;
-  networking.interfaces.enp0s31f6.useDHCP = true;
-  networking.interfaces.wlp2s0.useDHCP = true;
   networking.networkmanager = {
     enable = true;
     plugins = [
@@ -83,10 +75,6 @@
 
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
-  console = {
-    #  font = "Lat2-Terminus16";
-    keyMap = "fr";
-  };
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
@@ -109,7 +97,6 @@
   };
 
   # Configure keymap in X11
-  services.xserver.layout = "fr";
   # services.xserver.xkbOptions = "eurosign:e";
 
   # Enable CUPS to print documents.
@@ -193,7 +180,7 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "21.11"; # Did you read the comment?
+  system.stateVersion = "22.05"; # Did you read the comment?
 
 }
 

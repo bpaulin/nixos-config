@@ -14,6 +14,3 @@ done
 
 # update env structure
 cat .private_env.sh | sed "s/=$VALUE.*/='REDACTED'/" > .private_env.dist.sh
-
-# only one thing to do now...
-sudo -E nixos-rebuild switch

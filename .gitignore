@@ -3,3 +3,4 @@ private/
 *.iso
 chain_bundle.crt
 /etc
+machines/local

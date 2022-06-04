@@ -4,32 +4,7 @@
 
 ## Install
 
-```bash
-parted /dev/sda -- mklabel gpt
-parted /dev/sda -- mkpart ESP fat32 1MiB 512MiB
-parted /dev/sda -- set 1 esp on
-parted /dev/sda -- mkpart primary 512MiB 100%
-cryptsetup luksFormat /dev/sda2
-cryptsetup luksOpen /dev/sda2 enc-pv
-
-pvcreate /dev/mapper/enc-pv
-vgcreate vg /dev/mapper/enc-pv
-lvcreate -L 8G -n swap vg
-lvcreate -l '100%FREE' -n root vg
-
-mkfs.fat /dev/sda1
-mkfs.ext4 -L root /dev/vg/root
-mkswap -L swap /dev/vg/swap
-
-mount /dev/vg/root /mnt
-mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
-swapon /dev/vg/swap
-```
-
-```
-nix-env -i git envsubst
-```
+see [INSTALL.md](INSTALL.md)
 
 ## memo
 
