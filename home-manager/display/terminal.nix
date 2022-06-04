@@ -24,6 +24,9 @@
   };
 
   dconf.settings = {
+    "apps/guake/general" = {
+      start-fullscreen = true;
+    };
     "org/gnome/settings-daemon/plugins/media-keys" = {
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"

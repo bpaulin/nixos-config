@@ -4,7 +4,7 @@
   home.username = "bpaulin";
   home.homeDirectory = "/home/bpaulin";
 
-  home.stateVersion = "21.11";
+  home.stateVersion = "22.05";
 
   programs.home-manager.enable = true;
   nixpkgs.config.allowUnfree = true;
