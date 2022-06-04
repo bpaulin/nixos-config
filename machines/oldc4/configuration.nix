@@ -3,7 +3,9 @@
 {
   networking.hostName = "oldc4";
   imports = [
+    ./../../flavors/x/main.nix
     ./../../flavors/work/main.nix
+    ./../../flavors/devops/main.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -17,8 +19,5 @@
       allowDiscards = true;
     };
   };
-
-  console.keyMap = "fr";
-  services.xserver.layout = "fr";
 }
 

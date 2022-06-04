@@ -5,9 +5,6 @@
   ];
 
   programs = {
-    alacritty = {
-      enable = true;
-    };
     terminator = {
       enable = true;
       config = {
