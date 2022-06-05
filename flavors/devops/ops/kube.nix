@@ -7,22 +7,25 @@ let
   };
 in
 {
-  home.packages = with pkgs; [
-    kubectl
-    kubectx
-    k9s
-    helm-with-plugins
-    helmfile
-    # pinniped
-    kube-prompt
-  ];
+  home-manager.users.bpaulin = { pkgs, ... }: {
 
-  programs = {
-    vscode = {
-      extensions = with pkgs.vscode-extensions; [
-        redhat.vscode-yaml
-        ms-kubernetes-tools.vscode-kubernetes-tools
-      ];
+    home.packages = with pkgs; [
+      kubectl
+      kubectx
+      k9s
+      helm-with-plugins
+      helmfile
+      # pinniped
+      kube-prompt
+    ];
+
+    programs = {
+      vscode = {
+        extensions = with pkgs.vscode-extensions; [
+          redhat.vscode-yaml
+          ms-kubernetes-tools.vscode-kubernetes-tools
+        ];
+      };
     };
   };
 }

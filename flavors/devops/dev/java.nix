@@ -1,8 +1,11 @@
 { pkgs, ... }:
 {
+  home-manager.users.bpaulin = { pkgs, ... }: {
 
-  home.packages = with pkgs; [
-    maven
-    jdk
-  ];
+    home.packages = with pkgs; [
+      maven
+      jdk
+    ];
+
+  };
 }

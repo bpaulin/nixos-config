@@ -1,7 +1,14 @@
 { pkgs, ... }:
 {
-  programs.chromium = {
+  xdg.portal = {
+    # need to set enable-webrtc-pipewire-capturer in chrome
     enable = true;
-    package = pkgs.google-chrome;
+  };
+
+  home-manager.users.bpaulin = { pkgs, ... }: {
+    programs.chromium = {
+      enable = true;
+      package = pkgs.google-chrome;
+    };
   };
 }

@@ -18,7 +18,7 @@
       cowsay
       # fishs on screen (i'm a dad)
       asciiquarium
-      # trainon screen (i'm still a dad)
+      # train on screen (i'm still a dad)
       sl
       # ascii art stdout
       figlet

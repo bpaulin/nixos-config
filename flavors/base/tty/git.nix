@@ -1,10 +1,13 @@
+##
+# Git config
+##
 { pkgs, ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.packages = with pkgs; [
       ghq
-      git-crypt
+      git-trim
     ];
 
     programs = {
@@ -25,7 +28,6 @@
         ];
 
         aliases = {
-
           # Add
           a = "add";
 
@@ -97,12 +99,6 @@
           "credential" = {
             helper = "store";
           };
-          # "user" = {
-          #   signingKey = "84B8E7737F0A54B8D5A30CCF025E47CCAEB05A60";
-          # };
-          # "commit" = {
-          #   gpgsign = true;
-          # };
         };
       };
     };

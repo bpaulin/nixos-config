@@ -17,57 +17,31 @@
     enable = true;
   };
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  xdg.portal = {
-    # need to set enable-webrtc-pipewire-capturer in chrome
-    enable = true;
-  };
-
-
-  services.pcscd.enable = true;
-  programs.gnupg.agent = {
-    enable = true;
-    pinentryFlavor = "gnome3";
-    # enableSSHSupport = true;
-  };
-
-  virtualisation.docker.enable = true;
-
-
-  # users.defaultUserShell = pkgs.zsh;
   environment.pathsToLink = [ "/share/zsh" ];
-  # programs.zsh.enable = true;
+
+  environment.systemPackages = with pkgs; [
+    vim
+  ];
+
+  nixpkgs.config.allowUnfree = true;
 
   users.users.bpaulin = {
     isNormalUser = true;
     home = "/home/bpaulin";
     description = "bpaulin";
-    extraGroups = [ "wheel" "networkmanager" "docker" ];
+    extraGroups = [ "wheel" "networkmanager" ];
     shell = pkgs.zsh;
     hashedPassword = "$6$MDaoHcbuSiJQR83L$unAvaWD6YFLlimJSuKjYBCX8YBN3TWffMHelQBSv0uIZhC/4ISzcnkyKVu.9bbYX4SmTqUt37mQhYFXxpny23/";
   };
 
-  environment.systemPackages = with pkgs; [
-    vim
-    wget
-    pinentry-gnome
-    pinentry
-    openssl
-  ];
-
-  nixpkgs.config.allowUnfree = true;
-
   home-manager.users.bpaulin = { pkgs, ... }: {
-
     home.username = "bpaulin";
     home.homeDirectory = "/home/bpaulin";
 
-    home.stateVersion = "22.05";
-
     programs.home-manager.enable = true;
     nixpkgs.config.allowUnfree = true;
+
+    home.stateVersion = "22.05";
   };
 
   system.stateVersion = "22.05";

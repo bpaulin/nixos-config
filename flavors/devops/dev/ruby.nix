@@ -8,9 +8,11 @@ let
   ruby-with-my-packages = ruby.withPackages my-ruby-packages;
 in
 {
+  home-manager.users.bpaulin = { pkgs, ... }: {
 
-  home.packages = with pkgs; [
-    ruby-with-my-packages
-    bundix
-  ];
+    home.packages = with pkgs; [
+      ruby-with-my-packages
+      bundix
+    ];
+  };
 }

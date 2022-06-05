@@ -1,17 +1,22 @@
 { pkgs, ... }:
 {
+
+  virtualisation.docker.enable = true;
+
+  users.users.bpaulin = {
+    extraGroups = [ "docker" ];
+  };
+
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.packages = with pkgs; [
-      nixpkgs-fmt
-      nixos-option
-      rnix-lsp
-      vgo2nix
+      docker-compose_2
     ];
+
     programs = {
       vscode = {
         extensions = with pkgs.vscode-extensions; [
-          jnoortheen.nix-ide
+          ms-azuretools.vscode-docker
         ];
       };
     };

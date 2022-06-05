@@ -1,7 +1,10 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    sops
-    age
-  ];
+  home-manager.users.bpaulin = { pkgs, ... }: {
+
+    home.packages = with pkgs; [
+      sops
+      age
+    ];
+  };
 }
