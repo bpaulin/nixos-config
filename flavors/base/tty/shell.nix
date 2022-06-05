@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
 
@@ -47,8 +47,10 @@
         enableSyntaxHighlighting = true;
         initExtra = "
         eval $(thefuck --alias)
-      ";
+          ";
       };
     };
   };
 }
+
+

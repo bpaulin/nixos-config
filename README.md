@@ -25,7 +25,8 @@ In a machine folder:
 | ------------------------ | -------------------------------------------------------------- | ----------------- |
 | [base](flavors/base)     | shell related tools and config                                 | configuration.nix |
 | [devops](flavors/devops) | everything to code, test and deploy with every tech i've tried | machine           |
-| [work](flavors/work)     | proxy, connections, access needed for my company               | machine           |
+| [work](flavors/work)     | proxy, connections, accessetc needed for my company            | machine           |
+| [home](flavors/home)     | connections needed at home                                     | machine           |
 | [x](flavors/x)           | graphical apps on gnome                                        | machine           |
 
 This repo aims to be modular, but for now it has never been tested.

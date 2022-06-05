@@ -4,3 +4,5 @@ private/
 chain_bundle.crt
 /etc
 machines/local
+secrets.json
+age.txt

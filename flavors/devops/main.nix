@@ -6,6 +6,7 @@
       ./ops/cloud.nix
       ./ops/kube.nix
       ./ops/ops.nix
+      ./ops/sops.nix
       ./dev/python.nix
       ./dev/golang.nix
       ./dev/java.nix

@@ -6,6 +6,7 @@
       ./machines/local/configuration.nix
       <home-manager/nixos>
       ./flavors/base/main.nix
+      ./variables.nix
     ];
 
   time.timeZone = "Europe/Paris";
@@ -14,20 +15,6 @@
 
   networking.networkmanager = {
     enable = true;
-  };
-  environment.etc = {
-    "NetworkManager/system-connections/home_wifi.nmconnection" = {
-      user = "root";
-      group = "root";
-      source = ./etc/home_wifi.nmconnection;
-      mode = "0600";
-    };
-    "NetworkManager/system-connections/phone_wifi.nmconnection" = {
-      user = "root";
-      group = "root";
-      source = ./etc/phone_wifi.nmconnection;
-      mode = "0600";
-    };
   };
 
   services.xserver.enable = true;
@@ -49,15 +36,16 @@
   virtualisation.docker.enable = true;
 
 
-  users.defaultUserShell = pkgs.zsh;
+  # users.defaultUserShell = pkgs.zsh;
   environment.pathsToLink = [ "/share/zsh" ];
-  programs.zsh.enable = true;
+  # programs.zsh.enable = true;
 
   users.users.bpaulin = {
     isNormalUser = true;
     home = "/home/bpaulin";
     description = "bpaulin";
     extraGroups = [ "wheel" "networkmanager" "docker" ];
+    shell = pkgs.zsh;
     hashedPassword = "$6$MDaoHcbuSiJQR83L$unAvaWD6YFLlimJSuKjYBCX8YBN3TWffMHelQBSv0uIZhC/4ISzcnkyKVu.9bbYX4SmTqUt37mQhYFXxpny23/";
   };
 

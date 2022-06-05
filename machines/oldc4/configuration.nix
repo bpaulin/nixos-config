@@ -3,6 +3,7 @@
 {
   networking.hostName = "oldc4";
   imports = [
+    ./../../flavors/home/main.nix
     ./../../flavors/x/main.nix
     ./../../flavors/work/main.nix
     ./../../flavors/devops/main.nix

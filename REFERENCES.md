@@ -10,16 +10,6 @@ sudo nix-channel --add https://nixos.org/channels/nixos-22.05 nixos
 sudo nix-channel --update
 ```
 
-**OR**
-
-Set unstable channesl:
-
-```bash
-sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
-sudo nix-channel --update
-```
-
 Update config:
 
 ```bash
@@ -42,4 +32,16 @@ Update hardware config:
 
 ```bash
 nixos-generate-config --dir /etc/nixos/machines/local
+```
+
+Encrypt secrets
+
+```bash
+sops --encrypt secrets.json > secrets.enc.json
+```
+
+Decrypt secrets
+
+```bash
+sops --decrypt secrets.enc.json > secrets.json
 ```

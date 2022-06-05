@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-. $HOME/.private_env.sh
 
 if test "$PROXY_HOST" && ping -q -c 1 -W 0.5 $PROXY_HOST > /dev/null 2>&1 ; then
   if nmcli con show --active | grep vpn > /dev/null 2>&1 ; then

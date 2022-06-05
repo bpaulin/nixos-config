@@ -96,10 +96,8 @@ cd ..
 ##
 # Update secrets
 ##
-# /!\ Edit .private_env.nix
-cp .private_env.dist.sh .private_env.sh
-# Update files & co
-./update.sh
+# get age key
+SOPS_AGE_KEY_FILE=age.txt sops --decrypt secrets.enc.json > secrets.json
 
 ##
 # Finally, install nixos
