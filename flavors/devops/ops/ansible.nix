@@ -5,15 +5,11 @@
     home.packages = with pkgs; [
       ansible
       ansible-lint
-      terraform
-      vault
     ];
 
     programs = {
       vscode = {
-        extensions = with pkgs.vscode-extensions; [
-          hashicorp.terraform
-        ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        extensions = pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
             name = "ansible-vault-inline";
             publisher = "wolfmah";
@@ -30,4 +26,4 @@
       };
     };
   };
-  }
+}

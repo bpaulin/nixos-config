@@ -4,7 +4,8 @@
     ./ops/nix.nix
     ./ops/cloud.nix
     ./ops/kube.nix
-    ./ops/ops.nix
+    ./ops/ansible.nix
+    ./ops/terraform.nix
     ./ops/sops.nix
     ./ops/docker.nix
     ./dev/python.nix

@@ -17,6 +17,7 @@ in
       helmfile
       # pinniped
       kube-prompt
+      kube3d
     ];
 
     programs = {

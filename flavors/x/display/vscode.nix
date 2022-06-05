@@ -7,6 +7,7 @@
         extensions = with pkgs.vscode-extensions; [
           yzhang.markdown-all-in-one
           eamodio.gitlens
+          github.vscode-pull-request-github
           marp-team.marp-vscode
         ];
         userSettings = {

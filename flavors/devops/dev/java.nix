@@ -7,5 +7,11 @@
       jdk
     ];
 
+    programs.vscode = {
+      extensions = with pkgs.vscode-extensions; [
+        redhat.java
+      ];
+    };
+
   };
 }
