@@ -121,7 +121,7 @@ method=auto
       LDAP_PASSWORD = sysconfig.settings.LDAP_PASSWORD;
       WORK_DOCKER_REGISTRY = sysconfig.settings.WORK_DOCKER_REGISTRY;
       VAULT_TOKEN = sysconfig.settings.VAULT_TOKEN;
-      VAULT_ADRESS = sysconfig.settings.VAULT_ADRESS;
+      VAULT_ADDR = sysconfig.settings.VAULT_ADDR;
     };
     programs = {
       zsh = {

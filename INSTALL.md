@@ -79,7 +79,7 @@ swapon /dev/vg/swap
 # Clone this repo
 ##
 # Install git & tools
-nix-env -iA nixos.git nixos.envsubst
+nix-env -iA nixos.git nixos.sops nixos.age
 # Create config dir and clone this repo
 mkdir -p /mnt/etc/nixos
 cd /mnt/etc/nixos

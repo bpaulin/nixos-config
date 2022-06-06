@@ -13,7 +13,7 @@ in
 id=${sysconfig.settings.HOME_WIFI_SSID}
 uuid=319b1a3f-23d3-4b4d-b2d3-0eabdc391708
 type=wifi
-interface-name=wlp2s0
+interface-name=wlp1s0
 
 [wifi]
 mode=infrastructure
@@ -43,7 +43,7 @@ method=auto
 id=${sysconfig.settings.PHONE_WIFI_SSID}
 uuid=39264d3f-b409-441e-8301-5af8d7b211d4
 type=wifi
-interface-name=wlp2s0
+interface-name=wlp1s0
 
 [wifi]
 mode=infrastructure
