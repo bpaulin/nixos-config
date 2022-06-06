@@ -1,3 +1,8 @@
+##
+# Nodes Js
+#
+#  * tested with a nuxt project
+##
 { pkgs, ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {

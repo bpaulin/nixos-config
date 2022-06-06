@@ -7,6 +7,7 @@
       nixos-option
       rnix-lsp
       vgo2nix
+      node2nix
     ];
     programs = {
       vscode = {

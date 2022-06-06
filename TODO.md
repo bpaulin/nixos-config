@@ -5,3 +5,4 @@
  * proxy enable
  * pre select user at boot
  * wallpaper
+ * gh https and token

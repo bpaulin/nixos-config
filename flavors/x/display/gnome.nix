@@ -37,6 +37,10 @@
           "org.gnome.Console.desktop"
         ];
       };
+      "org/gnome/desktop/a11y" = {
+        # geek on couch: fast access to large text
+        always-show-universal-access-status = true;
+      };
     };
   };
 }

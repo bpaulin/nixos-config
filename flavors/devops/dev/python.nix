@@ -9,6 +9,7 @@ let
       loguru
       pyyaml
       atlassian-python-api
+      python-slugify
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
