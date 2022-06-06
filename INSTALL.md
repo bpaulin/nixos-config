@@ -84,12 +84,12 @@ nix-env -iA nixos.git nixos.sops nixos.age
 mkdir -p /mnt/etc/nixos
 cd /mnt/etc/nixos
 git clone https://github.com/bpaulin/nixos-config .
-# Set specific config (oldc4 is the machine name)
+# Set specific config (hydrogen is the machine name)
 cd machines
-nixos-generate-config --root /mnt --dir oldc4
+nixos-generate-config --root /mnt --dir hydrogen
 # Activate specific config
-ln -s oldc4 local
-# /!\ Edit oldc4/configuration.nix
+ln -s hydrogen local
+# /!\ Edit hydrogen/configuration.nix
 # don't forget boot.initrd.luks.devices !!
 cd ..
 

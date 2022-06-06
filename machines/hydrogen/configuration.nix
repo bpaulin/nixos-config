@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "oldc4";
+  networking.hostName = "hydrogen";
   imports = [
     ./../../flavors/home/main.nix
     ./../../flavors/x/main.nix

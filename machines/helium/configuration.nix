@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "hpc4";
+  networking.hostName = "helium";
   imports = [
     ./../../flavors/home/main.nix
     ./../../flavors/x/main.nix
