@@ -154,7 +154,7 @@ method=auto
 
     dconf.settings = {
       "system/proxy" = {
-        mode = true;
+        mode = "auto";
         autoconfig-url = sysconfig.settings.PROXY_PAC;
       };
     };

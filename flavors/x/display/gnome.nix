@@ -6,6 +6,12 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   home-manager.users.bpaulin = { pkgs, ... }: {
+
+    home.file = {
+      # https://unsplash.com/photos/0_xMuEbpFAQ
+      ".local/share/backgrounds/wallpaper.jpg".source = ./wallpaper.jpg;
+    };
+
     home.packages = with pkgs; [
       # to allow nix to set gnome settings
       dconf
@@ -40,6 +46,9 @@
       "org/gnome/desktop/a11y" = {
         # geek on couch: fast access to large text
         always-show-universal-access-status = true;
+      };
+      "org/gnome/desktop/background" = {
+        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.jpg";
       };
     };
   };

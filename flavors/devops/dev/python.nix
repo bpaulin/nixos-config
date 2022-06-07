@@ -10,6 +10,9 @@ let
       pyyaml
       atlassian-python-api
       python-slugify
+      GitPython
+      black
+      jinja2
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
@@ -18,7 +21,6 @@ in
 
     home.packages = with pkgs; [
       python-with-my-packages
-      black
     ];
 
     programs = {
