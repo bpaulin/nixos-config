@@ -6,3 +6,5 @@
  * pre select user at boot
  * ~~wallpaper~~
  * gh https and token
+ * pip upgrader
+ * medusa

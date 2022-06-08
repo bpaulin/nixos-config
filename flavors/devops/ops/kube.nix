@@ -15,6 +15,7 @@ in
       k9s
       helm-with-plugins
       helmfile
+      # waiting for my pr to be merged
       # pinniped
       kube-prompt
       kube3d

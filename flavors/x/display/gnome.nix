@@ -32,6 +32,10 @@
         # Limit switcher to current workspace.
         current-workspace-only = true;
       };
+      "org/gnome/mutter" = {
+        # Workspaces on all displays
+        workspaces-only-on-primary = false;
+      };
       "org/gnome/shell" = {
         # apps on dock
         favorite-apps = [
