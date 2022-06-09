@@ -9,6 +9,8 @@
       curl
       ldns
       bind
+      openssl
+      nssTools
       neofetch
       thefuck
       tree
