@@ -3,11 +3,6 @@
 ##
 { pkgs, ... }:
 {
-  # I like to be insulted when I enter a wrong password, don't judge me!
-  security.sudo.extraConfig = "
-    Defaults insults
-  ";
-
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [
       # wise and/or funny qotes

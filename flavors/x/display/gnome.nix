@@ -10,6 +10,9 @@
     home.file = {
       # https://unsplash.com/photos/0_xMuEbpFAQ
       ".local/share/backgrounds/wallpaper.jpg".source = ./wallpaper.jpg;
+      ".config/autostart/guake.desktop" = {
+        source = "${pkgs.guake}/share/applications/guake.desktop";
+      };
     };
 
     home.packages = with pkgs; [
@@ -21,6 +24,8 @@
       dconf2nix
       # to change settings manually
       gnome.gnome-tweaks
+      # dropdown terminal
+      guake
     ];
 
     # Gtk theme
@@ -66,6 +71,19 @@
       };
       "org/gnome/desktop/background" = {
         picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.jpg";
+      };
+      "apps/guake/general" = {
+        start-fullscreen = true;
+      };
+      "org/gnome/settings-daemon/plugins/media-keys" = {
+        custom-keybindings = [
+          "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        ];
+      };
+      "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+        binding = "<Control>twosuperior";
+        command = "guake-toggle";
+        name = "guake";
       };
     };
   };

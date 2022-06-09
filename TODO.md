@@ -8,3 +8,4 @@
  * gh https and token
  * pip upgrader
  * medusa
+ * sudo insults (overlay?)
