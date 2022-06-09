@@ -23,6 +23,15 @@
       gnome.gnome-tweaks
     ];
 
+    # Gtk theme
+    gtk = {
+      enable = true;
+      theme = {
+        package = pkgs.orchis-theme;
+        name = "Orchis";
+      };
+    };
+
     dconf.settings = {
       "org/gnome/desktop/peripherals/touchpad" = {
         # to have touchpad and mouse behave the same way
@@ -50,6 +59,10 @@
       "org/gnome/desktop/a11y" = {
         # geek on couch: fast access to large text
         always-show-universal-access-status = true;
+      };
+      "org/gnome/desktop/wm/preferences" = {
+        # geek on couch: fast access to large text
+        button-layout = "appmenu:minimize,maximize,close";
       };
       "org/gnome/desktop/background" = {
         picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.jpg";
