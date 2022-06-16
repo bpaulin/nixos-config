@@ -6,6 +6,9 @@
   };
 
   home-manager.users.bpaulin = { pkgs, ... }: {
+    programs.firefox = {
+      enable = true;
+    };
     programs.chromium = {
       enable = true;
       package = pkgs.google-chrome;
