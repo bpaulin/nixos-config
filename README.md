@@ -25,7 +25,7 @@ In a machine folder:
 | [devops](flavors/devops) | everything to code, test and deploy with every tech i've tried | machine           |
 | [work](flavors/work)     | proxy, connections, accessetc needed for my company            | machine           |
 | [home](flavors/home)     | connections needed at home                                     | machine           |
-| [x](flavors/x)           | graphical apps on gnome                                        | machine           |
+| [x](flavors/x)           | graphical apps on gnome (and maybe sway one day)               | machine           |
 
 This repo aims to be modular, but for now it has never been tested.
 
