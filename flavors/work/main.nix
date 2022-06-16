@@ -113,6 +113,62 @@ method=auto
     home.file = {
       # ".private_env.sh".source = ./../../.private_env.sh;
       "setproxy.sh".source = ./scripts/setproxy.sh;
+      ".m2/settings.xml" = {
+        target = ".m2/settings.xml";
+        text = ''
+          <settings xmlns="http://maven.apache.org/POM/4.0.0"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+            <localRepository xmlns="http://maven.apache.org/SETTINGS/1.1.0">/home/bpaulin/.m2/repository</localRepository>
+            <interactiveMode xmlns="http://maven.apache.org/SETTINGS/1.1.0">false</interactiveMode>
+            <servers xmlns="http://maven.apache.org/SETTINGS/1.1.0">
+              <server>
+                <username>${sysconfig.settings.WORK_MAVEN_USER}</username>
+                <password>${sysconfig.settings.WORK_MAVEN_PASS}</password>
+                <id>artifactory</id>
+              </server>
+            </servers>
+            <mirrors xmlns="http://maven.apache.org/SETTINGS/1.1.0">
+              <mirror>
+                <mirrorOf>*</mirrorOf>
+                <url>${sysconfig.settings.WORK_MAVEN_URL}</url>
+                <id>artifactory</id>
+              </mirror>
+            </mirrors>
+            <profiles xmlns="http://maven.apache.org/SETTINGS/1.1.0">
+              <profile>
+                <repositories>
+                  <repository>
+                    <releases />
+                    <snapshots />
+                    <id>artifactory</id>
+                    <name>Repo Artifactory animco</name>
+                    <url>${sysconfig.settings.WORK_MAVEN_URL}</url>
+                  </repository>
+                </repositories>
+                <pluginRepositories>
+                  <pluginRepository>
+                    <releases />
+                    <snapshots />
+                    <id>artifactory</id>
+                    <url>${sysconfig.settings.WORK_MAVEN_URL}</url>
+                  </pluginRepository>
+                </pluginRepositories>
+                <activation>
+                  <activeByDefault>true</activeByDefault>
+                </activation>
+                <id>artifactory</id>
+              </profile>
+            </profiles>
+            <activeProfiles xmlns="http://maven.apache.org/SETTINGS/1.1.0">
+              <activeProfile>artifactory</activeProfile>
+            </activeProfiles>
+            <pluginGroups xmlns="http://maven.apache.org/SETTINGS/1.1.0">
+              <pluginGroup>org.apache.maven.plugins</pluginGroup>
+              <pluginGroup>org.codehaus.mojo</pluginGroup>
+            </pluginGroups>
+          </settings>
+        '';
+      };
     };
     home.sessionVariables = {
       PROXY_HOST = sysconfig.settings.PROXY_HOST;

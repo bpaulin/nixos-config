@@ -20,6 +20,7 @@
           "editor.bracketPairColorization.enabled" = true;
           "diffEditor.ignoreTrimWhitespace" = false;
           "window.openFoldersInNewWindow" = "on";
+          "workbench.startupEditor" = "none";
         };
       };
     };
