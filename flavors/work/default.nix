@@ -18,7 +18,7 @@ permissions=user:bpaulin:;
 
 [vpn]
 connection-type=password
-gateway=${sysconfig.settings.WORK_VPN_GW}
+gateway=${sysconfig.secrets-json.WORK_VPN_GW}
 ignore-cert-warn=yes
 password-flags=0
 refuse-chap=yes
@@ -28,11 +28,11 @@ refuse-mschapv2=no
 refuse-pap=yes
 tls-ext=yes
 tls-verify-key-usage=no
-user=${sysconfig.settings.LDAP_USER}
+user=${sysconfig.secrets-json.LDAP_USER}
 service-type=org.freedesktop.NetworkManager.sstp
 
 [vpn-secrets]
-password=${sysconfig.settings.LDAP_PASSWORD}
+password=${sysconfig.secrets-json.LDAP_PASSWORD}
 
 [ipv4]
 method=auto
@@ -51,7 +51,7 @@ method=auto
       mode = "0600";
       text = "
 [connection]
-id=${sysconfig.settings.WORK_WIFI_SSID}
+id=${sysconfig.secrets-json.WORK_WIFI_SSID}
 uuid=c2916d12-b7b6-44ec-aa76-2ef05bec0273
 type=wifi
 permissions=
@@ -59,15 +59,15 @@ permissions=
 [wifi]
 mac-address-blacklist=
 mode=infrastructure
-ssid=${sysconfig.settings.WORK_WIFI_SSID}
+ssid=${sysconfig.secrets-json.WORK_WIFI_SSID}
 
 [wifi-security]
 key-mgmt=wpa-eap
 
 [802-1x]
 eap=peap;
-identity=${sysconfig.settings.LDAP_USER}
-password=${sysconfig.settings.LDAP_PASSWORD}
+identity=${sysconfig.secrets-json.LDAP_USER}
+password=${sysconfig.secrets-json.LDAP_PASSWORD}
 phase2-auth=mschapv2
 
 [ipv4]
@@ -122,15 +122,15 @@ method=auto
             <interactiveMode xmlns="http://maven.apache.org/SETTINGS/1.1.0">false</interactiveMode>
             <servers xmlns="http://maven.apache.org/SETTINGS/1.1.0">
               <server>
-                <username>${sysconfig.settings.WORK_MAVEN_USER}</username>
-                <password>${sysconfig.settings.WORK_MAVEN_PASS}</password>
+                <username>${sysconfig.secrets-json.WORK_MAVEN_USER}</username>
+                <password>${sysconfig.secrets-json.WORK_MAVEN_PASS}</password>
                 <id>artifactory</id>
               </server>
             </servers>
             <mirrors xmlns="http://maven.apache.org/SETTINGS/1.1.0">
               <mirror>
                 <mirrorOf>*</mirrorOf>
-                <url>${sysconfig.settings.WORK_MAVEN_URL}</url>
+                <url>${sysconfig.secrets-json.WORK_MAVEN_URL}</url>
                 <id>artifactory</id>
               </mirror>
             </mirrors>
@@ -142,7 +142,7 @@ method=auto
                     <snapshots />
                     <id>artifactory</id>
                     <name>Repo Artifactory animco</name>
-                    <url>${sysconfig.settings.WORK_MAVEN_URL}</url>
+                    <url>${sysconfig.secrets-json.WORK_MAVEN_URL}</url>
                   </repository>
                 </repositories>
                 <pluginRepositories>
@@ -150,7 +150,7 @@ method=auto
                     <releases />
                     <snapshots />
                     <id>artifactory</id>
-                    <url>${sysconfig.settings.WORK_MAVEN_URL}</url>
+                    <url>${sysconfig.secrets-json.WORK_MAVEN_URL}</url>
                   </pluginRepository>
                 </pluginRepositories>
                 <activation>
@@ -171,13 +171,13 @@ method=auto
       };
     };
     home.sessionVariables = {
-      PROXY_HOST = sysconfig.settings.PROXY_HOST;
-      PROXY_PORT = sysconfig.settings.PROXY_PORT;
-      LDAP_USER = sysconfig.settings.LDAP_USER;
-      LDAP_PASSWORD = sysconfig.settings.LDAP_PASSWORD;
-      WORK_DOCKER_REGISTRY = sysconfig.settings.WORK_DOCKER_REGISTRY;
-      VAULT_TOKEN = sysconfig.settings.VAULT_TOKEN;
-      VAULT_ADDR = sysconfig.settings.VAULT_ADDR;
+      PROXY_HOST = sysconfig.secrets-json.PROXY_HOST;
+      PROXY_PORT = sysconfig.secrets-json.PROXY_PORT;
+      LDAP_USER = sysconfig.secrets-json.LDAP_USER;
+      LDAP_PASSWORD = sysconfig.secrets-json.LDAP_PASSWORD;
+      WORK_DOCKER_REGISTRY = sysconfig.secrets-json.WORK_DOCKER_REGISTRY;
+      VAULT_TOKEN = sysconfig.secrets-json.VAULT_TOKEN;
+      VAULT_ADDR = sysconfig.secrets-json.VAULT_ADDR;
     };
     programs = {
       zsh = {
@@ -196,10 +196,10 @@ method=auto
       git = {
         includes = [
           {
-            condition = "gitdir:**/*" + sysconfig.settings.WORK_GIT_REGISTRY + "/**";
+            condition = "gitdir:**/*" + sysconfig.secrets-json.WORK_GIT_REGISTRY + "/**";
             contents = {
               user = {
-                email = sysconfig.settings.WORK_EMAIL;
+                email = sysconfig.secrets-json.WORK_EMAIL;
                 # signingKey = "2DCE07FF5DC04E9B1F94B03B21C4470EE6C38530";
               };
             };
@@ -211,7 +211,7 @@ method=auto
     dconf.settings = {
       "system/proxy" = {
         mode = "auto";
-        autoconfig-url = sysconfig.settings.PROXY_PAC;
+        autoconfig-url = sysconfig.secrets-json.PROXY_PAC;
       };
     };
   };

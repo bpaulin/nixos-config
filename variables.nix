@@ -4,12 +4,12 @@ with lib;
 
 {
   options = {
-    settings = mkOption {
+    secrets-json = mkOption {
       type = types.attrs;
     };
   };
 
   config = {
-    settings = (lib.trivial.importJSON ./secrets.json);
+    secrets-json = (lib.trivial.importJSON ./secrets.json);
   };
 }
