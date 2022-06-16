@@ -22,6 +22,7 @@
       ripgrep
       tldr
       httpie
+      duf
     ];
 
     home =
