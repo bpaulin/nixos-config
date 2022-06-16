@@ -10,3 +10,4 @@
  * medusa
  * sudo insults (overlay?)
  * improve molecule
+ * improve setup
