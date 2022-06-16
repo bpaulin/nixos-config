@@ -1,15 +1,13 @@
 { pkgs, ... }:
 {
 
-  services.xserver.enable = true;
-  services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
 
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.file = {
       # https://unsplash.com/photos/0_xMuEbpFAQ
-      ".local/share/backgrounds/wallpaper.jpg".source = ./wallpaper.jpg;
+      ".local/share/backgrounds/wallpaper.jpg".source = ./../wallpaper.jpg;
       ".config/autostart/guake.desktop" = {
         source = "${pkgs.guake}/share/applications/guake.desktop";
       };

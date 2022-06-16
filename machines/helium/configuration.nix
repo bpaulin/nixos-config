@@ -3,10 +3,10 @@
 {
   networking.hostName = "helium";
   imports = [
-    ./../../flavors/home/main.nix
-    ./../../flavors/x/main.nix
-    ./../../flavors/work/main.nix
-    ./../../flavors/devops/main.nix
+    ./../../flavors/home
+    ./../../flavors/x
+    ./../../flavors/work
+    ./../../flavors/devops
   ];
 
   boot.loader.systemd-boot.enable = true;

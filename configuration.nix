@@ -5,7 +5,7 @@
       ./machines/local/hardware-configuration.nix
       ./machines/local/configuration.nix
       <home-manager/nixos>
-      ./flavors/base/main.nix
+      ./flavors/base
       ./variables.nix
     ];
 
