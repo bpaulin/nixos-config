@@ -5,7 +5,7 @@
 
   imports = [
     ./gnome
-    ./sway
+    # ./sway
     ./common/browser.nix
     ./common/terminal.nix
     ./common/vscode.nix
