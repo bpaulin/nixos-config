@@ -6,5 +6,6 @@
     ./tty/shell.nix
     ./tty/ssh.nix
     ./tty/fun.nix
+    ./tty/vim.nix
   ];
 }

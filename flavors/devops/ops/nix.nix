@@ -1,18 +1,31 @@
+##
+# Nix tools and config
+##
 { pkgs, ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
-
     home.packages = with pkgs; [
+      # Nix file formatter
       nixpkgs-fmt
+      # Configuration explorer
       nixos-option
+      # Language server
       rnix-lsp
-      vgo2nix
-      node2nix
+      # Packages tools
+      vgo2nix # go
+      node2nix # node
     ];
+
     programs = {
       vscode = {
         extensions = with pkgs.vscode-extensions; [
           jnoortheen.nix-ide
+        ];
+      };
+
+      neovim = {
+        plugins = with pkgs.vimPlugins; [
+          vim-nix
         ];
       };
     };
