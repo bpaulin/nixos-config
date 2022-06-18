@@ -11,4 +11,4 @@
  * sudo insults (overlay?)
  * improve molecule
  * improve setup
- * editor config
+ * editor config file

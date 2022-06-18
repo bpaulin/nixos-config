@@ -2,6 +2,7 @@
 {
   imports = [
     ./ops/nix.nix
+    ./ops/editorconfig.nix
     ./ops/cloud.nix
     ./ops/kube.nix
     ./ops/ansible.nix
