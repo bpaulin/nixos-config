@@ -4,7 +4,7 @@
   networking.hostName = "helium";
   imports = [
     ./../../flavors/home
-    ./../../flavors/x
+    ./../../flavors/display
     ./../../flavors/work
     ./../../flavors/devops
   ];

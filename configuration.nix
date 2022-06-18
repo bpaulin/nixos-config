@@ -17,12 +17,6 @@
     enable = true;
   };
 
-  environment.pathsToLink = [ "/share/zsh" ];
-
-  environment.systemPackages = with pkgs; [
-    vim
-  ];
-
   nixpkgs.config.allowUnfree = true;
 
   users.users.bpaulin = {

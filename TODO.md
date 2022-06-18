@@ -1,11 +1,11 @@
 # todo
 
  * ~~sudo ifconfig ppp0 mtu 1400 up~~
- * wifi interface /machine
+ * ~~wifi interface /machine~~
  * ~~proxy enable~~
  * pre select user at boot
  * ~~wallpaper~~
- * gh https and token
+ * gh ~~https~~ and token
  * pip upgrader
  * medusa
  * sudo insults (overlay?)

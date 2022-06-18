@@ -1,5 +1,8 @@
 { pkgs, lib, ... }:
 {
+
+  environment.pathsToLink = [ "/share/zsh" ];
+
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.packages = with pkgs; [

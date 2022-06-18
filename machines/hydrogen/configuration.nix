@@ -4,7 +4,7 @@
   networking.hostName = "hydrogen";
   imports = [
     ./../../flavors/home
-    ./../../flavors/x
+    ./../../flavors/display
     ./../../flavors/work
     ./../../flavors/devops
   ];
