@@ -6,7 +6,7 @@
       ./machines/local/configuration.nix
       <home-manager/nixos>
       ./flavors/base
-      ./variables.nix
+      ./variables
     ];
 
   time.timeZone = "Europe/Paris";
