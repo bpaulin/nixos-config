@@ -5,11 +5,11 @@
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [
-      # wise and/or funny qotes
+      # wise and/or funny quotes
       fortune
       # psych colors stdout
       lolcat
-      # a cow (at best) syaing stdout
+      # a cow (at best) saying stdout
       cowsay
       # fishs on screen (i'm a dad)
       asciiquarium

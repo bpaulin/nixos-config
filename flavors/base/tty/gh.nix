@@ -9,7 +9,7 @@
         enable = true;
         package = pkgs.gitAndTools.gh;
         settings = {
-          git_protocol = "ssh";
+          git_protocol = "https";
         };
       };
     };
