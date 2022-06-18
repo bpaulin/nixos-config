@@ -9,6 +9,7 @@
     ./ops/terraform.nix
     ./ops/sops.nix
     ./ops/docker.nix
+    ./ops/libvirt.nix
     ./dev/python.nix
     ./dev/golang.nix
     ./dev/java.nix
