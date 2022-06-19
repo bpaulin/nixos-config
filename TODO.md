@@ -12,3 +12,5 @@
  * improve molecule
  * improve setup
  * editor config file
+ * kubectl alias
+ * organize shell.nix

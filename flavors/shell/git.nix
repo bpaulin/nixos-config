@@ -6,15 +6,34 @@
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.packages = with pkgs; [
+      # clone any repo in a predictive path
       ghq
+      # clean merged branch
       git-trim
     ];
 
     programs = {
       git = {
+        # Base config
         enable = true;
         userName = "Bruno Paulin";
         userEmail = "brunopaulin@bpaulin.net";
+
+        # Extra config
+        extraConfig = {
+          "pull" = {
+            rebase = false;
+          };
+          # Path to all my repos
+          "ghq" = {
+            root = "~/repos";
+          };
+          "credential" = {
+            helper = "store";
+          };
+        };
+
+        # Better looking diff
         delta = {
           enable = true;
           options = {
@@ -23,10 +42,12 @@
           };
         };
 
+        # Patterns i want to ignore across repositories
         ignores = [
           "bpignore*"
         ];
 
+        # Git aliases
         aliases = {
           # Add
           a = "add";
@@ -87,18 +108,6 @@
 
           # prune local
           prunelocal = "!'git branch --merged | grep -v \"\\*\" | xargs -n 1 git branch -d'";
-        };
-
-        extraConfig = {
-          "pull" = {
-            rebase = false;
-          };
-          "ghq" = {
-            root = "~/repos";
-          };
-          "credential" = {
-            helper = "store";
-          };
         };
       };
     };

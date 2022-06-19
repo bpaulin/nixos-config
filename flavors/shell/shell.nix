@@ -1,10 +1,11 @@
+##
+# Shell (zsh) config
+##
 { pkgs, lib, ... }:
 {
-
   environment.pathsToLink = [ "/share/zsh" ];
 
   home-manager.users.bpaulin = { pkgs, ... }: {
-
     home.packages = with pkgs; [
       nerdfonts # too many
       dyff
@@ -28,16 +29,6 @@
       duf
     ];
 
-    home =
-      {
-        sessionPath = [
-          "$HOME/.local/bin"
-        ];
-        shellAliases = {
-          cat = "bat --paging=never";
-        };
-      };
-
     programs = {
       starship.enable = true;
       bat = {
@@ -54,6 +45,15 @@
         initExtra = "
         eval $(thefuck --alias)
           ";
+      };
+    };
+
+    home = {
+      sessionPath = [
+        "$HOME/.local/bin"
+      ];
+      shellAliases = {
+        cat = "bat --paging=never";
       };
     };
   };
