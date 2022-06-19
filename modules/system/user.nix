@@ -13,8 +13,13 @@
     home.username = "bpaulin";
     home.homeDirectory = "/home/bpaulin";
 
-    # to add packages not yet in nixpkgs
-    nixpkgs.overlays = [ (import ../../pkgs) ];
+
+    nixpkgs.overlays = [
+      # to add packages not yet in nixpkgs
+      (import ../../pkgs/nixpkgs)
+      # to add packages specific to my uses
+      (import ../../pkgs/specific)
+    ];
 
     programs.home-manager.enable = true;
     nixpkgs.config.allowUnfree = true;

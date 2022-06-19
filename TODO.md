@@ -7,7 +7,7 @@
  * ~~wallpaper~~
  * gh ~~https~~ and token
  * pip upgrader
- * medusa
+ * ~~medusa~~
  * sudo insults (overlay?)
  * improve molecule
  * improve setup
