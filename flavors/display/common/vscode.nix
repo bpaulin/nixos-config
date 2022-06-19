@@ -5,6 +5,7 @@
       vscode = {
         enable = true;
         extensions = with pkgs.vscode-extensions; [
+          redhat.vscode-yaml
           yzhang.markdown-all-in-one
           eamodio.gitlens
           github.vscode-pull-request-github

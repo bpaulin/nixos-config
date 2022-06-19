@@ -6,6 +6,7 @@
       sops
       age
       vault
+      vault-medusa
     ];
   };
 }
