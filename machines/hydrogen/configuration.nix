@@ -2,12 +2,6 @@
 
 {
   networking.hostName = "hydrogen";
-  imports = [
-    ./../../flavors/home
-    ./../../flavors/display
-    ./../../flavors/work
-    ./../../flavors/devops
-  ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
