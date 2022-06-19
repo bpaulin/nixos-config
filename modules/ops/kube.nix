@@ -50,6 +50,18 @@ in
           ms-kubernetes-tools.vscode-kubernetes-tools
         ];
       };
+
+      starship = {
+        settings = {
+          kubernetes = {
+            disabled = false;
+            context_aliases = {
+              "gke_.*_(?P<var_cluster>[\\\\w-]+)" = "gke-$var_cluster";
+
+            };
+          };
+        };
+      };
     };
   };
 }

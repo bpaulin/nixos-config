@@ -7,5 +7,15 @@
       google-cloud-sdk
       aws
     ];
+
+    programs = {
+      starship = {
+        settings = {
+          gcloud = {
+            disabled = true;
+          };
+        };
+      };
+    };
   };
 }

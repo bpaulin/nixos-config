@@ -30,7 +30,14 @@
     ];
 
     programs = {
-      starship.enable = true;
+      starship = {
+        enable = true;
+        settings = {
+          cmd_duration = {
+            show_notifications = true;
+          };
+        };
+      };
       bat = {
         enable = true;
       };
