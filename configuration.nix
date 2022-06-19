@@ -27,53 +27,53 @@
       ##
 
       # System config
-      ./flavors/system/networkmanager.nix
-      ./flavors/system/locale.nix
-      ./flavors/system/user.nix
+      ./modules/system/networkmanager.nix
+      ./modules/system/locale.nix
+      ./modules/system/user.nix
 
       # Home settings and connections
-      ./flavors/home
+      ./modules/home
 
       # Work settings and connections
-      ./flavors/work
+      ./modules/work
 
       # Shell config
-      ./flavors/shell/fun.nix
-      ./flavors/shell/gh.nix
-      ./flavors/shell/git.nix
-      ./flavors/shell/shell.nix
-      ./flavors/shell/ssh.nix
-      ./flavors/shell/vim.nix
+      ./modules/shell/fun.nix
+      ./modules/shell/gh.nix
+      ./modules/shell/git.nix
+      ./modules/shell/shell.nix
+      ./modules/shell/ssh.nix
+      ./modules/shell/vim.nix
 
       # Display config
-      ./flavors/display/manager.nix
-      ./flavors/display/gnome
-      # ./flavors/display/sway
-      ./flavors/display/common/browser.nix
-      ./flavors/display/common/terminal.nix
-      ./flavors/display/common/vscode.nix
+      ./modules/display/manager.nix
+      ./modules/display/gnome
+      # ./modules/display/sway
+      ./modules/display/common/browser.nix
+      ./modules/display/common/terminal.nix
+      ./modules/display/common/vscode.nix
 
       # Development tools
-      ./flavors/dev/nodejs.nix
-      ./flavors/dev/groovy.nix
-      ./flavors/dev/ruby.nix
-      ./flavors/dev/golang.nix
-      ./flavors/dev/python.nix
-      ./flavors/dev/java.nix
+      ./modules/dev/nodejs.nix
+      ./modules/dev/groovy.nix
+      ./modules/dev/ruby.nix
+      ./modules/dev/golang.nix
+      ./modules/dev/python.nix
+      ./modules/dev/java.nix
 
       # Ops tools
-      ./flavors/ops/terraform.nix
-      ./flavors/ops/libvirt.nix
-      ./flavors/ops/cloud.nix
-      ./flavors/ops/sops.nix
-      ./flavors/ops/kube.nix
-      ./flavors/ops/editorconfig.nix
-      ./flavors/ops/nix.nix
-      ./flavors/ops/docker.nix
-      ./flavors/ops/ansible.nix
+      ./modules/ops/terraform.nix
+      ./modules/ops/libvirt.nix
+      ./modules/ops/cloud.nix
+      ./modules/ops/sops.nix
+      ./modules/ops/kube.nix
+      ./modules/ops/editorconfig.nix
+      ./modules/ops/nix.nix
+      ./modules/ops/docker.nix
+      ./modules/ops/ansible.nix
 
       # Not classified yet...
-      ./flavors/mess.nix
+      ./modules/mess.nix
     ];
 }
 
