@@ -32,11 +32,7 @@
     programs = {
       starship = {
         enable = true;
-        settings = {
-          cmd_duration = {
-            show_notifications = true;
-          };
-        };
+        settings = { };
       };
       bat = {
         enable = true;
@@ -49,9 +45,13 @@
         enable = true;
         enableAutosuggestions = true;
         enableSyntaxHighlighting = true;
+        enableCompletion = true;
         initExtra = "
         eval $(thefuck --alias)
           ";
+        initExtraBeforeCompInit = ''
+          fpath+="/nix/var/nix/profiles/per-user/bpaulin/profile/share/zsh/site-functions"
+        '';
       };
     };
 

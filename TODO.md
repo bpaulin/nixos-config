@@ -14,3 +14,4 @@
  * editor config file
  * kubectl alias
  * organize shell.nix
+ * zsh completion
