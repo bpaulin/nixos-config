@@ -1,3 +1,6 @@
+##
+# Java toolbox
+##
 { pkgs, ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
@@ -49,12 +52,6 @@
           version = "0.19.1";
           sha256 = "sha256-zCCmIKdad5wSETEb6WmZ19KLToWiUMzdCpTVMAZRLnk=";
         }
-        # {
-        #   name = "vscode-lombok";
-        #   publisher = "GabrielBB";
-        #   version = "1.0.1";
-        #   sha256 = "sha256-xhsdP51vKiem4Q0WgdX5PlmGPsg9Khqw1qL5YdW5h8E=";
-        # }
       ];
     };
   };
