@@ -72,6 +72,10 @@
       ./modules/ops/docker.nix
       ./modules/ops/ansible.nix
 
+      # Impermanence
+      ./modules/impermanence/module.nix
+      ./modules/impermanence/config.nix
+
       # Not classified yet...
       ./modules/mess.nix
     ];

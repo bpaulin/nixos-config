@@ -4,8 +4,11 @@ with lib;
 
 {
   options = {
-    flags = mkOption {
-      type = types.attrs;
+    flags = {
+      impermanence = mkOption {
+        type = types.bool;
+        default = false;
+      };
     };
   };
 

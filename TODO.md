@@ -15,3 +15,9 @@
  * kubectl alias
  * organize shell.nix
  * zsh completion
+ * doc impermanence
+
+```
+# sudo mkdir -p /nix/persist/home/bpaulin
+# sudo chown bpaulin:users /nix/persist/home/bpaulin
+```
