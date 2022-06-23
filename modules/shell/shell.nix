@@ -27,6 +27,7 @@
       tldr
       httpie
       duf
+      exa
     ];
 
     programs = {
@@ -61,6 +62,9 @@
       ];
       shellAliases = {
         cat = "bat --paging=never";
+      };
+      shellAliases = {
+        ls = "exa";
       };
     };
   };
