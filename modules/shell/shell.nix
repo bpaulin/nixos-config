@@ -28,6 +28,8 @@
       httpie
       duf
       exa
+      glances
+      fx
     ];
 
     programs = {
@@ -42,6 +44,8 @@
       htop.enable = true;
       direnv.enable = true;
       tmux.enable = true;
+      autojump.enable = true;
+      fzf.enable = true;
       zsh = {
         enable = true;
         enableAutosuggestions = true;

@@ -11,6 +11,7 @@
 
     home.packages = with pkgs; [
       docker-compose_2
+      ctop
     ];
 
     programs = {
