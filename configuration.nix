@@ -48,7 +48,7 @@
       # Display config
       ./modules/display/manager.nix
       ./modules/display/gnome
-      # ./modules/display/sway
+      ./modules/display/sway
       ./modules/display/common/browser.nix
       ./modules/display/common/terminal.nix
       ./modules/display/common/vscode.nix
