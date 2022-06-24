@@ -1,7 +1,7 @@
 repository:
   name: nixos-config
   description: my NixOs config
-  topics: nix, nixos, dotfiles, devops, home manager
+  topics: nix, nixos, dotfiles, devops, home-manager
 
   private: false
   has_issues: true
