@@ -78,28 +78,17 @@ swapon /dev/vg/swap
 ##
 # Clone this repo
 ##
-# Install git & tools
+# Install tools
 nix-env -iA nixos.git nixos.sops nixos.age
 # Create config dir and clone this repo
 mkdir -p /mnt/etc/nixos
 cd /mnt/etc/nixos
 git clone https://github.com/bpaulin/nixos-config .
 # Set specific config (hydrogen is the machine name)
-cd machines
-nixos-generate-config --root /mnt --dir hydrogen
-# Activate specific config
-ln -s hydrogen local
-# /!\ Edit hydrogen/configuration.nix
-# don't forget boot.initrd.luks.devices !!
-cd ..
+./setup hydrogen
+nixos-generate-config --root /mnt --dir machines/hydrogen
+##
 
-##
-# Update secrets
-##
-# get age key
-SOPS_AGE_KEY_FILE=age.txt sops --decrypt secrets.enc.json > secrets.json
-
-##
 # Finally, install nixos
 ##
 # Set channels

@@ -10,7 +10,7 @@
  * ~~medusa~~
  * sudo insults (overlay?)
  * improve molecule
- * improve setup
+ * ~~improve setup~~
  * editor config file
  * kubectl alias
  * organize shell.nix
