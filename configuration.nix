@@ -60,6 +60,7 @@
       ./modules/dev/golang.nix
       ./modules/dev/python.nix
       ./modules/dev/java.nix
+      ./modules/dev/rust.nix
 
       # Ops tools
       ./modules/ops/terraform.nix
