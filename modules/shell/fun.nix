@@ -3,6 +3,11 @@
 ##
 { pkgs, ... }:
 {
+  # will recompile sudo just to insult me, obviouslymandatory
+  nixpkgs.overlays = [
+    (import ../../pkgs/overlays/sudo.nix)
+  ];
+
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [
       # wise and/or funny quotes
@@ -17,6 +22,7 @@
       sl
       # ascii art stdout
       figlet
+      sudo
     ];
   };
 }
