@@ -6,13 +6,15 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # boot.initrd.luks.devices = {
-  #   root = {
-  #     name = "root";
-  #     device = "/dev/disk/by-uuid/dac31eae-6a2f-4b60-a4b9-625bb1e79fb0";
-  #     preLVM = true;
-  #     allowDiscards = true;
-  #   };
-  # };
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  boot.initrd.luks.devices = {
+    root = {
+      name = "root";
+      device = "/dev/disk/by-uuid/2f526857-4621-4e3d-a4cd-4268eda455b4";
+      preLVM = true;
+      allowDiscards = true;
+    };
+  };
 }
 

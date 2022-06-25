@@ -23,20 +23,20 @@ sudo dd if=latest-nixos-gnome-x86_64-linux.iso of=/dev/sdb
 # Partitions
 ##
 # Create a new partition table
-parted /dev/sda -- mklabel gpt
+parted /dev/nvme0n1 -- mklabel gpt
 # Create a uefi boot partition
-parted /dev/sda -- mkpart ESP fat32 1MiB 512MiB
-parted /dev/sda -- set 1 esp on
+parted /dev/nvme0n1 -- mkpart ESP fat32 1MiB 512MiB
+parted /dev/nvme0n1 -- set 1 esp on
 # Give everything else to a primary partition
-parted /dev/sda -- mkpart primary 512MiB 100%
+parted /dev/nvme0n1 -- mkpart primary 512MiB 100%
 
 ##
 # Encryption
 ##
 # Crypt partition
-cryptsetup luksFormat /dev/sda2
+cryptsetup luksFormat /dev/nvme0n1p2
 # Open Partition
-cryptsetup luksOpen /dev/sda2 enc-pv
+cryptsetup luksOpen /dev/nvme0n1p2 enc-pv
 
 ##
 # LVM
@@ -54,7 +54,7 @@ lvcreate -l '100%FREE' -n root vg
 # Format
 ##
 # Format boot (fat32)
-mkfs.fat /dev/sda1
+mkfs.fat /dev/nvme0n1p1
 # Format root (ext4)
 mkfs.ext4 -L root /dev/vg/root
 # Format swap
@@ -67,7 +67,7 @@ mkswap -L swap /dev/vg/swap
 mount /dev/vg/root /mnt
 # Mount boot
 mkdir /mnt/boot
-mount /dev/sda1 /mnt/boot
+mount /dev/nvme0n1p1 /mnt/boot
 # Use swap
 swapon /dev/vg/swap
 ```
@@ -85,8 +85,8 @@ mkdir -p /mnt/etc/nixos
 cd /mnt/etc/nixos
 git clone https://github.com/bpaulin/nixos-config .
 # Set specific config (hydrogen is the machine name)
-./setup hydrogen
-nixos-generate-config --root /mnt --dir machines/hydrogen
+./setup.sh hydrogen
+nixos-generate-config --root /mnt --dir machines/local
 ##
 
 # Finally, install nixos
@@ -110,5 +110,4 @@ sudo chown -R bpaulin:users /etc/nixos
 sudo nix-channel --add https://github.com/nix-community/home-manager/archive/release-22.05.tar.gz home-manager
 sudo nix-channel --add https://nixos.org/channels/nixos-22.05 nixos
 sudo nix-channel --update
-
 ```
