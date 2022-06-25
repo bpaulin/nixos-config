@@ -7,29 +7,33 @@
 
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [
-      # nerdfonts # too many
+      # json/yaml
       dyff
       yq
+      fx
+      # network tools
       curl
+      httpie
       ldns
       bind
       openssl
       nssTools
+      # disk
+      ncdu
+      # archive
+      dtrx
+      unzip
+      # mess
       neofetch
       thefuck
       tree
-      ncdu
-      dtrx
-      unzip
       envsubst
       glow
       ripgrep
       tldr
-      httpie
       duf
       exa
       glances
-      fx
     ];
 
     programs = {
