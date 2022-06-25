@@ -30,6 +30,7 @@
       ./modules/system/networkmanager.nix
       ./modules/system/locale.nix
       ./modules/system/user.nix
+      ./modules/system/fwupd.nix
 
       # Home settings and connections
       ./modules/home
