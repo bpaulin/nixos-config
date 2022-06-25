@@ -22,7 +22,6 @@
       sl
       # ascii art stdout
       figlet
-      sudo
     ];
   };
 }
