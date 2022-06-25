@@ -1,8 +1,9 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 let
   sysconfig = (import <nixpkgs/nixos> { }).config;
 in
-{
+
+lib.mkIf (config.flags.forWork) {
   environment.etc = {
     "NetworkManager/system-connections/work_vpn.nmconnection" = {
       user = "root";

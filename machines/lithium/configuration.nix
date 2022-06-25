@@ -8,6 +8,8 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+  flags.forWork = false;
+
   boot.initrd.luks.devices = {
     root = {
       name = "root";

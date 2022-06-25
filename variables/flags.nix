@@ -9,6 +9,10 @@ with lib;
         type = types.bool;
         default = false;
       };
+      forWork = mkOption {
+        type = types.bool;
+        default = true;
+      };
     };
   };
 
