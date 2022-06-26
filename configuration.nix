@@ -74,6 +74,9 @@
       ./modules/ops/docker.nix
       ./modules/ops/ansible.nix
 
+      # Medias
+      ./modules/medias/image.nix
+
       # Impermanence
       ./modules/impermanence/module.nix
       ./modules/impermanence/config.nix
