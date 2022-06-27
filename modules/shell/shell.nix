@@ -34,6 +34,7 @@
       duf
       exa
       glances
+      psmisc
     ];
 
     programs = {
