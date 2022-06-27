@@ -9,9 +9,12 @@ lib.mkIf (config.flags.impermanence) {
 
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.persistence."/nix/persist/home/bpaulin" = {
-      directories = [ ];
+      directories = [
+        ".config/gcloud"
+      ];
       files = [
         ".test_impermanence"
+        ".config/gh/hosts.yml"
       ];
     };
   };

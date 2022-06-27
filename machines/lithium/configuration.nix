@@ -9,6 +9,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   flags.forWork = false;
+  flags.impermanence = false;
 
   boot.initrd.luks.devices = {
     root = {
