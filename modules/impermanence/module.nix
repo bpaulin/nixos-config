@@ -23,7 +23,7 @@ in
 
   home-manager.users.bpaulin = { pkgs, ... }: {
     imports = [ "${impermanence}/home-manager.nix" ];
-    home.persistence."/nix/persist/home" = {
+    home.persistence."/nix/persist/home/bpaulin" = {
       directories = [ ];
       files = [ ];
       allowOther = true;
