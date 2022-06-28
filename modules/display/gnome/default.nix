@@ -7,7 +7,7 @@
 
     home.file = {
       # https://unsplash.com/photos/0_xMuEbpFAQ
-      ".local/share/backgrounds/wallpaper.jpg".source = ./../wallpaper.jpg;
+      ".local/share/backgrounds/wallpaper.svg".source = ./../wallpaper.svg;
       ".config/autostart/guake.desktop" = {
         source = "${pkgs.guake}/share/applications/guake.desktop";
       };
@@ -68,7 +68,7 @@
         button-layout = "appmenu:minimize,maximize,close";
       };
       "org/gnome/desktop/background" = {
-        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.jpg";
+        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.svg";
       };
       "apps/guake/general" = {
         start-fullscreen = true;
