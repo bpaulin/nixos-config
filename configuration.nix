@@ -68,6 +68,7 @@
       ./modules/ops/libvirt.nix
       ./modules/ops/cloud.nix
       ./modules/ops/sops.nix
+      ./modules/ops/vault.nix
       ./modules/ops/kube.nix
       ./modules/ops/editorconfig.nix
       ./modules/ops/nix.nix
