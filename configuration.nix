@@ -57,7 +57,6 @@
       # Development tools
       ./modules/dev/nodejs.nix
       ./modules/dev/groovy.nix
-      ./modules/dev/ruby.nix
       ./modules/dev/golang.nix
       ./modules/dev/python.nix
       ./modules/dev/java.nix
