@@ -10,6 +10,7 @@
 
   flags.forWork = false;
   flags.impermanence = false;
+  # flags.isServer = true;
 
   boot.initrd.luks.devices = {
     root = {

@@ -13,6 +13,10 @@ with lib;
         type = types.bool;
         default = true;
       };
+      isServer = mkOption {
+        type = types.bool;
+        default = false;
+      };
     };
   };
 
