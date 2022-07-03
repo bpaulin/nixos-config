@@ -5,6 +5,7 @@
     home.packages = with pkgs; [
       terraform
       terraform-ls
+      tfk8s
     ];
 
     programs = {
