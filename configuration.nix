@@ -57,7 +57,6 @@
       # Development tools
       ./modules/dev/nodejs.nix
       ./modules/dev/groovy.nix
-      ./modules/dev/ruby.nix
       ./modules/dev/golang.nix
       ./modules/dev/python.nix
       ./modules/dev/java.nix
@@ -81,6 +80,9 @@
       # Impermanence
       ./modules/impermanence/module.nix
       ./modules/impermanence/config.nix
+
+      # Server
+      ./modules/server/k3s.nix
 
       # Not classified yet...
       ./modules/mess.nix
