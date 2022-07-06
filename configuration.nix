@@ -73,6 +73,7 @@
       ./modules/ops/nix.nix
       ./modules/ops/docker.nix
       ./modules/ops/ansible.nix
+      ./modules/ops/tilt.nix
 
       # Medias
       ./modules/medias/image.nix
