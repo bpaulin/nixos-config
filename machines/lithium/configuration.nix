@@ -9,6 +9,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   flags.forWork = false;
+  flags.forGames = true;
   flags.impermanence = false;
   # flags.isServer = true;
 

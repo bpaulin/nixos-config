@@ -13,6 +13,10 @@ with lib;
         type = types.bool;
         default = true;
       };
+      forGames = mkOption {
+        type = types.bool;
+        default = false;
+      };
       isServer = mkOption {
         type = types.bool;
         default = false;

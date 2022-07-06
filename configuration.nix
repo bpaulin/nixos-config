@@ -38,6 +38,8 @@
       # Work settings and connections
       ./modules/work
 
+      # Games
+
       # Shell config
       ./modules/shell/fun.nix
       ./modules/shell/gh.nix
@@ -77,6 +79,7 @@
 
       # Medias
       ./modules/medias/image.nix
+      ./modules/medias/games.nix
 
       # Impermanence
       ./modules/impermanence/module.nix
