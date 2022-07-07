@@ -6,6 +6,7 @@
       terraform
       terraform-ls
       tfk8s
+      infracost
     ];
 
     programs = {
