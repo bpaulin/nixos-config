@@ -1,16 +1,16 @@
-{ lib, buildGoModule, fetchFromGitHub, installShellFiles, terraform }:
+{ lib, buildGo118Module, fetchFromGitHub, installShellFiles, terraform }:
 
-buildGoModule rec {
+buildGo118Module rec {
   pname = "infracost";
-  version = "0.10.6";
+  version = "0.10.7";
 
   src = fetchFromGitHub {
     owner = "infracost";
     rev = "v${version}";
     repo = "infracost";
-    sha256 = "sha256-JYC5wsv3JIqzv2woHits3wMpvPZ70lVrAZDh/DB1SVE=";
+    sha256 = "sha256-r/rWCvVxfXqzF/ZEcCoYNrPlJYvUAugsXcAi157d774=";
   };
-  vendorSha256 = "sha256-/B3hXHRNk6DJ6iC0RalsoWsb6vK0md8asnLkhSAeHXU=";
+  vendorSha256 = "sha256-nTq9r+xo7NJ8E2s4AdnF27whF1U0FtYSEAMN88pHUgg=";
 
   ldflags = [ "-s" "-w" "-X github.com/infracost/infracost/internal/version.Version=v${version}" ];
 
