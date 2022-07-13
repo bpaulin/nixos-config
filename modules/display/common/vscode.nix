@@ -10,6 +10,19 @@
           eamodio.gitlens
           github.vscode-pull-request-github
           marp-team.marp-vscode
+        ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "code-spell-checker-french";
+            publisher = "streetsidesoftware";
+            version = "0.2.1";
+            sha256 = "sha256-VKFzWKYHSzL2Tye6rFbmqcpcGK4T5Zutu/ZWOwVpec8=";
+          }
+          {
+            name = "code-spell-checker";
+            publisher = "streetsidesoftware";
+            version = "2.2.5";
+            sha256 = "sha256-QDLK99ja1Bb3Lxhde12O1ezdMfEAyFZNb6yKNeCn0Cs=";
+          }
         ];
         userSettings = {
           "terminal.integrated.fontFamily" = "Source Code Pro";

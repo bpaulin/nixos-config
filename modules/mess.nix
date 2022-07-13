@@ -1,6 +1,4 @@
 { pkgs, ... }:
 {
-  home-manager.users.bpaulin = { pkgs, ... }: {
-    home.packages = with pkgs; [ xsel ];
-  };
+  home-manager.users.bpaulin = { pkgs, ... }: { };
 }
