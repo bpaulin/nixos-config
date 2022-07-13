@@ -63,6 +63,7 @@
       ./modules/dev/python.nix
       ./modules/dev/java.nix
       ./modules/dev/rust.nix
+      ./modules/dev/julia.nix
 
       # Ops tools
       ./modules/ops/terraform.nix
