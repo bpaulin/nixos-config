@@ -50,6 +50,7 @@ let
       black
       jinja2
       molecule
+      scrapy
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
