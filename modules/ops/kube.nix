@@ -35,6 +35,8 @@ in
       kubecolor
       # Authentification on cluster
       pinniped
+      # Check best practices
+      kube-score
     ];
 
     home = {
