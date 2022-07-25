@@ -23,6 +23,7 @@
       # archive
       dtrx
       unzip
+      p7zip
       # mess
       neofetch
       thefuck
