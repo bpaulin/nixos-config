@@ -51,6 +51,7 @@ let
       jinja2
       molecule
       scrapy
+      aiohttp
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
