@@ -10,7 +10,6 @@
 
   flags.forWork = false;
   flags.forGames = true;
-  flags.impermanence = false;
   # flags.isServer = true;
 
   boot.initrd.luks.devices = {

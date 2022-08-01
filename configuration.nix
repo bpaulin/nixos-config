@@ -82,10 +82,6 @@
       ./modules/medias/image.nix
       ./modules/medias/games.nix
 
-      # Impermanence
-      ./modules/impermanence/module.nix
-      ./modules/impermanence/config.nix
-
       # Server
       ./modules/server/k3s.nix
 
