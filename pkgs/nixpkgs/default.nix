@@ -4,4 +4,5 @@ self: super:
   vault-medusa = super.callPackage ./vault-medusa { };
   infracost = super.callPackage ./infracost { };
   molecule = super.callPackage ./molecule { };
+  ansible-builder = super.callPackage ./ansible-builder { };
 }

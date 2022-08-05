@@ -6,6 +6,7 @@
       ansible
       ansible-lint
       molecule
+      ansible-builder
     ];
 
     programs = {
