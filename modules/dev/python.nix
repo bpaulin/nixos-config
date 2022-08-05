@@ -25,6 +25,7 @@ in
     home.packages = with pkgs; [
       python-with-my-packages
       yamllint
+      pur
     ];
 
     programs = {

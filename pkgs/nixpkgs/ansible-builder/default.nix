@@ -36,6 +36,4 @@ python3Packages.buildPythonPackage rec {
     python3Packages.requirements-parser
     bindep
   ];
-  # nativeBuildInputs = [ python3Packages.setuptools-scm ];
-  # SETUPTOOLS_SCM_PRETEND_VERSION = version;
 }
