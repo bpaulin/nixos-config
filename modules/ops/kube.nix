@@ -36,7 +36,7 @@ in
       # Authentification on cluster
       pinniped
       # Check best practices
-      kube-score
+      polaris
     ];
 
     home = {
