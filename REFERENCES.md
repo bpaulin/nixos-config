@@ -45,3 +45,9 @@ Decrypt secrets
 ```bash
 sops --decrypt secrets.enc.json > secrets.json
 ```
+
+Get last versions of vscode extensions
+
+```bash
+curl https://raw.githubusercontent.com/NixOS/nixpkgs/master/pkgs/applications/editors/vscode/extensions/update_installed_exts.sh | bash > vscode_ext.nix
+```

@@ -2,3 +2,4 @@
 machines/local
 secrets.json
 age.txt
+vscode_ext.nix

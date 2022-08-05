@@ -21,8 +21,8 @@
           {
             name = "ansible";
             publisher = "redhat";
-            version = "0.10.0";
-            sha256 = "sha256-cXDr0vNDjn3HZdKdFhE0yXo8dLS78LIqhZ5tY//2EDo=";
+            version = "0.11.29";
+            sha256 = "0qhkqr7a2fl05r7ryb35r58mj8zja4fysmxj4y25n9hjllg2ax5n";
           }
         ];
       };
