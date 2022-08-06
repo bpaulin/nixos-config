@@ -64,7 +64,6 @@
         always-show-universal-access-status = true;
       };
       "org/gnome/desktop/wm/preferences" = {
-        # geek on couch: fast access to large text
         button-layout = "appmenu:minimize,maximize,close";
       };
       "org/gnome/desktop/background" = {

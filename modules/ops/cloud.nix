@@ -6,6 +6,7 @@
       azure-cli
       google-cloud-sdk
       aws
+      heroku
     ];
 
     programs = {
