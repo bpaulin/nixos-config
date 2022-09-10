@@ -8,7 +8,7 @@
     home.packages = with pkgs; [
       maven
       lombok
-      eclipses.eclipse-jee
+      # eclipses.eclipse-jee
     ];
 
     programs.java.enable = true;

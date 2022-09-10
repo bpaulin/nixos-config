@@ -7,6 +7,7 @@
       ansible-lint
       molecule
       ansible-builder
+      j2cli
     ];
 
     programs = {
