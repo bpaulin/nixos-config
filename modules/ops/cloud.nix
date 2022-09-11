@@ -7,6 +7,7 @@
       google-cloud-sdk
       aws
       heroku
+      nodePackages.firebase-tools
     ];
 
     programs = {
