@@ -5,7 +5,7 @@
     home.packages = with pkgs; [
       azure-cli
       google-cloud-sdk
-      aws
+      awscli2
       heroku
       nodePackages.firebase-tools
     ];

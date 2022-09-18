@@ -7,6 +7,8 @@
       terraform-ls
       tfk8s
       infracost
+      tfsec
+      tflint
     ];
 
     programs = {
