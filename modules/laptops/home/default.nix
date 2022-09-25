@@ -1,6 +1,6 @@
 { config, pkgs, ... }:
 let
-  sysconfig = (import <nixpkgs/nixos> { }).config;
+  sysconfig = config;
 in
 {
   environment.etc = {

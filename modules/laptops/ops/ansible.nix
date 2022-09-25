@@ -6,7 +6,7 @@
       # ansible
       ansible-lint
       # molecule
-      ansible-builder
+      # ansible-builder
       j2cli
     ];
 

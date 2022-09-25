@@ -2,6 +2,7 @@
 {
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "22.05";
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   imports =
     [
@@ -9,10 +10,10 @@
       # Nixos config
       ##
       # Per machine config
-      ./machines/local/hardware-configuration.nix
-      ./machines/local/configuration.nix
+      ./machines/lithium/hardware-configuration.nix
+      ./machines/lithium/configuration.nix
       # Home manager module
-      <home-manager/nixos>
+      # <home-manager/nixos>
 
       ##
       # Variables
