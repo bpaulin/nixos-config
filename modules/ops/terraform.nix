@@ -9,6 +9,7 @@
       infracost
       tfsec
       tflint
+      terrascan
     ];
 
     programs = {
