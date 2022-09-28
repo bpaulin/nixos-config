@@ -10,7 +10,7 @@
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.packages = with pkgs; [
-      docker-compose_2
+      docker-compose
       ctop
     ];
 

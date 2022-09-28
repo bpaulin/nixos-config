@@ -5,7 +5,7 @@
     home.packages = with pkgs; [
       ansible
       ansible-lint
-      molecule
+      # molecule
       ansible-builder
       j2cli
     ];

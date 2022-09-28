@@ -12,7 +12,6 @@
       # Language server
       rnix-lsp
       # Packages tools
-      vgo2nix # go
       node2nix # node
     ];
 
