@@ -27,6 +27,7 @@
       ##
 
       # System config
+      ./modules/system/nixpkgs.nix
       ./modules/system/networkmanager.nix
       ./modules/system/locale.nix
       ./modules/system/user.nix

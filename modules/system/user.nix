@@ -14,16 +14,7 @@
     home.username = "bpaulin";
     home.homeDirectory = "/home/bpaulin";
 
-
-    nixpkgs.overlays = [
-      # to add packages not yet in nixpkgs
-      (import ../../pkgs/nixpkgs)
-      # to add packages specific to my uses
-      (import ../../pkgs/specific)
-    ];
-
     programs.home-manager.enable = true;
-    nixpkgs.config.allowUnfree = true;
 
     home.stateVersion = "22.05";
   };
