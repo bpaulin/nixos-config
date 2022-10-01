@@ -51,6 +51,12 @@ in
           };
         };
       };
+      neovim = {
+        plugins = with pkgs.vimPlugins; [
+          vim-helm
+        ];
+      };
     };
+
   };
 }
