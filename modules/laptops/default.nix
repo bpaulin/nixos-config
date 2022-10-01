@@ -2,12 +2,6 @@
 {
   imports =
     [
-      # System config
-      ./system/nixpkgs.nix
-      ./system/networkmanager.nix
-      ./system/locale.nix
-      ./system/user.nix
-      ./system/fwupd.nix
 
       # Home settings and connections
       ./home
@@ -19,11 +13,7 @@
 
       # Shell config
       ./shell/fun.nix
-      ./shell/gh.nix
-      ./shell/git.nix
-      ./shell/shell.nix
       ./shell/ssh.nix
-      ./shell/vim.nix
 
       # Display config
       ./display/manager.nix
