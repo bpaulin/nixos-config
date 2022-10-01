@@ -58,9 +58,6 @@
       ./medias/image.nix
       ./medias/games.nix
 
-      # Server
-      ./server/k3s.nix
-
       # Not classified yet...
       ./mess.nix
     ];

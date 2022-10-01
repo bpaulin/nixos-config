@@ -3,6 +3,10 @@
 {
   networking.hostName = "lithium";
 
+  imports = [
+    ./../../modules/laptops
+  ];
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -10,7 +14,6 @@
 
   flags.forWork = false;
   flags.forGames = true;
-  # flags.isServer = true;
 
   boot.initrd.luks.devices = {
     root = {

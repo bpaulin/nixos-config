@@ -3,7 +3,7 @@
 ##
 { pkgs, ... }:
 {
-  # will recompile sudo just to insult me, obviouslymandatory
+  # will recompile sudo just to insult me, obviously mandatory
   nixpkgs.overlays = [
     (import ../../../pkgs/overlays/sudo.nix)
   ];

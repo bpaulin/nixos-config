@@ -26,8 +26,8 @@
       # Modules
       ##
 
-      # Laptops config
-      ./modules/laptops
+      # common config
+      ./modules/common
     ];
 }
 
