@@ -8,7 +8,6 @@
     ./system/user.nix
     ./system/fwupd.nix
 
-
     # Shell config
     ./shell/fun.nix
     ./shell/gh.nix
@@ -16,6 +15,10 @@
     ./shell/shell.nix
     ./shell/ssh.nix
     ./shell/vim.nix
+
+    # Ops config
+    ./ops/kube.nix
+    ./ops/nix.nix
   ];
 }
 
