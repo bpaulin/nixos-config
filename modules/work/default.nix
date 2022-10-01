@@ -112,7 +112,6 @@ method=auto
 
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.file = {
-      # ".private_env.sh".source = ./../../.private_env.sh;
       "setproxy.sh".source = ./scripts/setproxy.sh;
       ".m2/settings.xml" = {
         target = ".m2/settings.xml";
