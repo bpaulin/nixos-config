@@ -5,7 +5,7 @@
 {
   # will recompile sudo just to insult me, obviouslymandatory
   nixpkgs.overlays = [
-    (import ../../pkgs/overlays/sudo.nix)
+    (import ../../../pkgs/overlays/sudo.nix)
   ];
 
   home-manager.users.bpaulin = { pkgs, ... }: {

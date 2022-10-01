@@ -26,67 +26,8 @@
       # Modules
       ##
 
-      # System config
-      ./modules/system/nixpkgs.nix
-      ./modules/system/networkmanager.nix
-      ./modules/system/locale.nix
-      ./modules/system/user.nix
-      ./modules/system/fwupd.nix
-
-      # Home settings and connections
-      ./modules/home
-
-      # Work settings and connections
-      ./modules/work
-
-      # Games
-
-      # Shell config
-      ./modules/shell/fun.nix
-      ./modules/shell/gh.nix
-      ./modules/shell/git.nix
-      ./modules/shell/shell.nix
-      ./modules/shell/ssh.nix
-      ./modules/shell/vim.nix
-
-      # Display config
-      ./modules/display/manager.nix
-      ./modules/display/gnome
-      # ./modules/display/sway
-      ./modules/display/common/browser.nix
-      ./modules/display/common/terminal.nix
-      ./modules/display/common/vscode.nix
-
-      # Development tools
-      ./modules/dev/nodejs.nix
-      ./modules/dev/groovy.nix
-      ./modules/dev/golang.nix
-      ./modules/dev/python.nix
-      ./modules/dev/java.nix
-      ./modules/dev/rust.nix
-      ./modules/dev/julia.nix
-
-      # Ops tools
-      ./modules/ops/terraform.nix
-      ./modules/ops/libvirt.nix
-      ./modules/ops/cloud.nix
-      ./modules/ops/sops.nix
-      ./modules/ops/vault.nix
-      ./modules/ops/kube.nix
-      ./modules/ops/nix.nix
-      ./modules/ops/docker.nix
-      ./modules/ops/ansible.nix
-      ./modules/ops/tilt.nix
-
-      # Medias
-      ./modules/medias/image.nix
-      ./modules/medias/games.nix
-
-      # Server
-      ./modules/server/k3s.nix
-
-      # Not classified yet...
-      ./modules/mess.nix
+      # Laptops config
+      ./modules/laptops
     ];
 }
 
