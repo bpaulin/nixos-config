@@ -29,14 +29,8 @@ in
       helmfile
       # To see logs of several pods
       kubetail
-      # k3s in docker fo local dev
-      kube3d
       # Colors for kubectl
       kubecolor
-      # Authentification on cluster
-      pinniped
-      # Check best practices
-      polaris
     ];
 
     home = {
@@ -47,23 +41,22 @@ in
     };
 
     programs = {
-      vscode = {
-        extensions = with pkgs.vscode-extensions; [
-          ms-kubernetes-tools.vscode-kubernetes-tools
-        ];
-      };
-
       starship = {
         settings = {
           kubernetes = {
             disabled = false;
             context_aliases = {
               "gke_.*_(?P<var_cluster>[\\\\w-]+)" = "gke-$var_cluster";
-
             };
           };
         };
       };
+      neovim = {
+        plugins = with pkgs.vimPlugins; [
+          vim-helm
+        ];
+      };
     };
+
   };
 }

@@ -16,12 +16,6 @@
     ];
 
     programs = {
-      vscode = {
-        extensions = with pkgs.vscode-extensions; [
-          jnoortheen.nix-ide
-        ];
-      };
-
       neovim = {
         plugins = with pkgs.vimPlugins; [
           vim-nix
