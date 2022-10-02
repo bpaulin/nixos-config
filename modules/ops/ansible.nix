@@ -3,7 +3,7 @@
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.packages = with pkgs; [
-      ansible
+      # ansible
       ansible-lint
       # molecule
       ansible-builder

@@ -16,6 +16,8 @@ let
       scrapy
       aiohttp
       cryptography
+      jmespath
+      ansible-core
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
