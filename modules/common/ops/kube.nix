@@ -31,6 +31,8 @@ in
       kubetail
       # Colors for kubectl
       kubecolor
+      # Fluxcd cli
+      fluxcd
     ];
 
     home = {

@@ -13,7 +13,7 @@
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   flags.forWork = false;
-  flags.forGames = true;
+  flags.forGames = false;
 
   boot.initrd.luks.devices = {
     root = {
