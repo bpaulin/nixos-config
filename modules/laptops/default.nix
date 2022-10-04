@@ -4,10 +4,10 @@
     [
 
       # Home settings and connections
-      ./home
+      # ./home
 
       # Work settings and connections
-      ./work
+      # ./work
 
       # Games
 

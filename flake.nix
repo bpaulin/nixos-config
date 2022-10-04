@@ -10,10 +10,13 @@
 
     # use the version of nixpkgs we specified above rather than the one HM would ordinarily use
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+
+    sops-nix.url = github:Mic92/sops-nix;
+    # sops-nix.inputs.nixpkgs.follows = "nixpkgs";
   };
 
   # what will be produced (i.e. the build)
-  outputs = inputs: {
+  outputs = { self, sops-nix, ... }@inputs: {
     # define a "nixos" build
     nixosConfigurations.lithium = inputs.nixpkgs.lib.nixosSystem {
       # system to build for
@@ -21,6 +24,7 @@
       # modules to use
       modules = [
         ./configuration.nix # our previous config file
+        sops-nix.nixosModules.sops
         inputs.home-manager.nixosModules.home-manager # make home manager available to configuration.nix
         {
           # use system-level nixpkgs rather than the HM private ones
