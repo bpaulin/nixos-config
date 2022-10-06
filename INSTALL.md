@@ -92,8 +92,8 @@ nixos-generate-config --root /mnt --dir machines/local
 # Finally, install nixos
 ##
 # Set channels
-nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-nix-channel --add https://nixos.org/channels/nixos-unstable nixos
+nix-channel --add https://github.com/nix-community/home-manager/archive/release-22.05.tar.gz home-manager
+nix-channel --add https://nixos.org/channels/nixos-22.05 nixos
 nix-channel --update
 # Install (repeat if network failure)
 nixos-install --no-root-passwd
