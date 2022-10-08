@@ -31,6 +31,14 @@
           "credential" = {
             helper = "store";
           };
+          "gpg" = {
+            format = "ssh";
+          };
+        };
+
+        signing = {
+          key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDTx7CHqLr9A9N63GeyWZRXIxCfZQGLI+PmZhkeoCdWLzTTXUEkQX7nTRz6wX8Gw94TIkcwLglAIToCFH7RwODnkauRdsG42xJUazSiVm2PInp7UFhPkeb+dFVyO6wa1YQWQyCEpH4WnXLBrjNyPQVjv3VRfKQPo9Rv+0v0n+zvC65O8WMPhyAVu2Bc/EUqv+GlXTCaJ/hoB/xiLXTJgFyHzoeo0+UoWirGbQkb7mBvCY2R0YnoNl1dQ6dR2RNbzXpzDERTUw37BJm9XlXyF6TrXc7FFY9cGHp7q2yKzN3nRMmsQJwFfU/WijHCDQetIrJODs3+/4NCWFW+N8JeFMjzEUPN4lA981MRu5bMWc/O/sjpvuT+06V6sUkmuofNvewRxEs4Egw7mbBwVOzmdxD9FcjO+57pRr90EkSgcVyGmUJ1dpcYZPVs7E76NDduJHWN37yzyKAax0vNR4JHtEMLexZ+Sb9ZTXyP7iCgn7GP/vDAPlcE4pLBp/q0hQ3GQis=";
+          signByDefault = true;
         };
 
         # Better looking diff
