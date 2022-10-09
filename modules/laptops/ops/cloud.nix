@@ -6,6 +6,7 @@
       azure-cli
       google-cloud-sdk
       awscli2
+      eksctl
       heroku
       nodePackages.firebase-tools
     ];

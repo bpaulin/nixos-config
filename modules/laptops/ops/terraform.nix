@@ -28,6 +28,14 @@
         };
         extensions = with pkgs.vscode-extensions; [
           hashicorp.terraform
+        ] ++
+        pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "tfsec";
+            publisher = "tfsec";
+            version = "1.11.0";
+            sha256 = "sha256-gIzdcDpvTDhGwTOGBrbY8Y2BAa/n5qrazFNwwFcBc28=";
+          }
         ];
       };
     };
