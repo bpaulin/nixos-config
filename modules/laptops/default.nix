@@ -48,6 +48,9 @@
       ./medias/image.nix
       ./medias/games.nix
 
+      # System
+      ./system/print.nix
+
       # Not classified yet...
       ./mess.nix
     ];
