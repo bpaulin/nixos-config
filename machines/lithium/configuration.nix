@@ -5,6 +5,9 @@
 
   imports = [
     ./../../modules/laptops
+    <nixos-hardware/common/pc/ssd>
+    <nixos-hardware/common/pc/laptop>
+    <nixos-hardware/common/cpu/intel>
   ];
 
   boot.loader.systemd-boot.enable = true;

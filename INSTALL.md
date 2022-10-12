@@ -93,6 +93,7 @@ nixos-generate-config --root /mnt --dir machines/local
 ##
 # Set channels
 nix-channel --add https://github.com/nix-community/home-manager/archive/release-22.05.tar.gz home-manager
+nix-channel --add https://github.com/NixOS/nixos-hardware/archive/master.tar.gz nixos-hardware
 nix-channel --add https://nixos.org/channels/nixos-22.05 nixos
 nix-channel --update
 # Install (repeat if network failure)
@@ -108,6 +109,7 @@ reboot
 sudo chown -R bpaulin:users /etc/nixos
 # Set channels
 sudo nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+sudo nix-channel --add https://github.com/NixOS/nixos-hardware/archive/master.tar.gz nixos-hardware
 sudo nix-channel --add https://nixos.org/channels/nixos-unstable nixos
 sudo nix-channel --update
 ```
