@@ -15,7 +15,6 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  flags.forWork = false;
   flags.forGames = false;
 
   boot.initrd.luks.devices = {

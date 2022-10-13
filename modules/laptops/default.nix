@@ -2,14 +2,8 @@
 {
   imports =
     [
-
       # Home settings and connections
       ./home
-
-      # Work settings and connections
-      ./work
-
-      # Games
 
       # Shell config
       ./shell/fun.nix

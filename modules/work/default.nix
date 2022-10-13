@@ -3,7 +3,7 @@ let
   sysconfig = (import <nixpkgs/nixos> { }).config;
 in
 
-lib.mkIf (config.flags.forWork) {
+{
   environment.etc = {
     "NetworkManager/system-connections/work_vpn.nmconnection" = {
       user = "root";
@@ -200,7 +200,6 @@ method=auto
             contents = {
               user = {
                 email = sysconfig.secrets-json.WORK_EMAIL;
-                # signingKey = "2DCE07FF5DC04E9B1F94B03B21C4470EE6C38530";
               };
             };
           }

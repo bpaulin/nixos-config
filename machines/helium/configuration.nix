@@ -5,6 +5,7 @@
 
   imports = [
     ./../../modules/laptops
+    ./../../modules/work
     <nixos-hardware/common/pc/ssd>
     <nixos-hardware/common/pc/laptop>
     <nixos-hardware/common/cpu/amd>
