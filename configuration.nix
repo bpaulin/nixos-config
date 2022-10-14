@@ -21,8 +21,6 @@
       ##
       # Secrets decrypted
       ./variables/secrets.nix
-      # Flags to enable/disable features (not used yet)
-      ./variables/flags.nix
 
       ##
       # Modules

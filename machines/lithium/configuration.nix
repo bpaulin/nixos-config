@@ -9,14 +9,13 @@
     <nixos-hardware/common/pc/ssd>
     <nixos-hardware/common/pc/laptop>
     <nixos-hardware/common/cpu/intel>
+    <nixos-hardware/common/gpu/intel.nix>
   ];
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  flags.forGames = false;
 
   boot.initrd.luks.devices = {
     root = {

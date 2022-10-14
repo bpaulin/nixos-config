@@ -13,6 +13,7 @@
       fx
       # network tools
       curl
+      wget
       httpie
       ldns
       bind
