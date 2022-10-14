@@ -7,7 +7,8 @@
     ./system/locale.nix
     ./system/user.nix
     ./system/fwupd.nix
-    ./system/secrets.nix
+    # no need for secrets for now
+    #./system/secrets.nix
 
     # Shell config
     ./shell/fun.nix

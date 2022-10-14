@@ -13,7 +13,8 @@
       ./machines/local/configuration.nix
       # Home manager module
       <home-manager/nixos>
-      <agenix/modules/age.nix>
+      # no need for secrets for now
+      # <agenix/modules/age.nix>
 
       ##
       # Variables
