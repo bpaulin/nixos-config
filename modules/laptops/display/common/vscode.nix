@@ -14,14 +14,14 @@
           {
             name = "code-spell-checker-french";
             publisher = "streetsidesoftware";
-            version = "0.2.2";
-            sha256 = "14kin9nn1nq9q2p3n927rcg41idjxmpq2cz63rg6hwa55384n82r";
+            version = "0.2.3";
+            sha256 = "020fr4rm8d3gwvwymrzcj3zfnac6xqchpiwz4gdwdi7sx53c35jw";
           }
           {
             name = "code-spell-checker";
             publisher = "streetsidesoftware";
-            version = "2.3.4";
-            sha256 = "0h19j3017k30jh6qvjazsggj6pajp9ps6smvnphwasxmjji1mjbj";
+            version = "2.10.1";
+            sha256 = "03cx684mn0nk47xpm46dly8g0lxars5h46vj41p8nhgsq9429rhm";
           }
         ];
         userSettings = {
