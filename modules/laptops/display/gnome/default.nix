@@ -51,11 +51,11 @@
           # chrome
           "google-chrome.desktop"
           # terminal
-          "org.gnome.Console.desktop"
+          "terminator.desktop"
         ];
       };
       "org/gnome/desktop/a11y" = {
-        # geek on couch: fast access to large text
+        # old geek on couch: fast access to large text
         always-show-universal-access-status = true;
       };
       "org/gnome/desktop/wm/preferences" = {

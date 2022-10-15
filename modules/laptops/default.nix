@@ -2,9 +2,6 @@
 {
   imports =
     [
-      # Home settings and connections
-      ./home
-
       # Shell config
       ./shell/fun.nix
       ./shell/ssh.nix
