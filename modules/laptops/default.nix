@@ -40,10 +40,10 @@
 
       # Medias
       ./medias/image.nix
-      ./medias/games.nix
 
       # System
       ./system/print.nix
+      ./system/fonts.nix
 
       # Not classified yet...
       ./mess.nix
