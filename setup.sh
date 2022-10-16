@@ -32,4 +32,4 @@ then
 fi
 
 ## decrypt
-sops --decrypt secrets.enc.json > secrets.json
+sops --decrypt modules/work/current/secrets.enc.json > modules/work/current/secrets.json

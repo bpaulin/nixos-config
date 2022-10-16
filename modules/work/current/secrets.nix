@@ -10,6 +10,6 @@ with lib;
   };
 
   config = {
-    secrets-json = (lib.trivial.importJSON ./../secrets.json);
+    secrets-json = (lib.trivial.importJSON ./secrets.json);
   };
 }

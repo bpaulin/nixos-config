@@ -4,6 +4,11 @@ let
 in
 
 {
+
+  imports = [
+    ./secrets.nix
+  ];
+
   environment.etc = {
     "NetworkManager/system-connections/work_vpn.nmconnection" = {
       user = "root";

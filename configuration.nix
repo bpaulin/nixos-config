@@ -17,12 +17,6 @@
       # <agenix/modules/age.nix>
 
       ##
-      # Variables
-      ##
-      # Secrets decrypted
-      ./variables/secrets.nix
-
-      ##
       # Modules
       ##
 
