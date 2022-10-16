@@ -6,7 +6,6 @@
   home-manager.users.bpaulin = { pkgs, ... }: {
 
     home.file = {
-      # https://unsplash.com/photos/0_xMuEbpFAQ
       ".local/share/backgrounds/sillywalk.jpg".source = ./../sillywalk.jpg;
     };
 

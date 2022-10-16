@@ -1,7 +1,6 @@
 { pkgs, ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
-
     programs = {
       terminator = {
         enable = true;
