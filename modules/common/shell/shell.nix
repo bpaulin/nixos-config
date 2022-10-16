@@ -21,6 +21,7 @@
       nssTools
       # disk
       ncdu
+      duf
       # archive
       dtrx
       unzip
@@ -33,10 +34,10 @@
       glow
       ripgrep
       tldr
-      duf
       exa
       glances
       psmisc
+      go-task
     ];
 
     programs = {

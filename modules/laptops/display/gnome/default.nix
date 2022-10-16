@@ -7,7 +7,7 @@
 
     home.file = {
       # https://unsplash.com/photos/0_xMuEbpFAQ
-      ".local/share/backgrounds/wallpaper.svg".source = ./../wallpaper.svg;
+      ".local/share/backgrounds/sillywalk.jpg".source = ./../sillywalk.jpg;
     };
 
     home.packages = with pkgs; [
@@ -62,7 +62,10 @@
         button-layout = "appmenu:minimize,maximize,close";
       };
       "org/gnome/desktop/background" = {
-        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.svg";
+        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/sillywalk.jpg";
+      };
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
       };
     };
   };
