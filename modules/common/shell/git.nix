@@ -29,16 +29,12 @@
           "credential" = {
             helper = "store";
           };
-          "commit" = {
-            gpgSign = true;
-          };
           "gpg" = {
             format = "ssh";
           };
           user = {
             name = "Bruno Paulin";
             email = "brunopaulin@bpaulin.net";
-            signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICLatnqf7B6dDnH9NepGdgo5xwNq4Zn7Lq/qrtuzSodF brunopaulin@bpaulin.net";
           };
         };
 
