@@ -5,3 +5,4 @@ age.txt
 vscode_ext.nix
 
 id_ed25519
+keys/*
