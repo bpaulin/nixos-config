@@ -3,7 +3,7 @@
 #
 # tested on https://www.rust-lang.org/learn/get-started
 ##
-{ pkgs, ... }:
+{ ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [

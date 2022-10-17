@@ -1,4 +1,4 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, ... }:
 let
   sysconfig = (import <nixpkgs/nixos> { }).config;
 in
@@ -115,7 +115,7 @@ method=auto
     Defaults env_keep += CURL_NIX_FLAGS
   ";
 
-  home-manager.users.bpaulin = { pkgs, ... }: {
+  home-manager.users.bpaulin = { ... }: {
     home.file = {
       "setproxy.sh".source = ./scripts/setproxy.sh;
       ".m2/settings.xml" = {

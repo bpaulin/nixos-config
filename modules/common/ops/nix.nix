@@ -1,7 +1,7 @@
 ##
 # Nix tools and config
 ##
-{ pkgs, ... }:
+{ ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [

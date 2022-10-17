@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, lib, ... }:
 let
   modifier = "Mod4";
 in

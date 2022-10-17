@@ -1,7 +1,7 @@
 ##
 # Git config
 ##
-{ pkgs, ... }:
+{ ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
 

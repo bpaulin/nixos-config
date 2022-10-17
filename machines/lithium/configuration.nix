@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   networking.hostName = "lithium";
@@ -27,7 +27,7 @@
     };
   };
 
-  home-manager.users.bpaulin = { pkgs, ... }: {
+  home-manager.users.bpaulin = { ... }: {
     programs = {
       git = {
         extraConfig = {

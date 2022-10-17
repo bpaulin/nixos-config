@@ -11,7 +11,7 @@
     hashedPassword = "$6$MDaoHcbuSiJQR83L$unAvaWD6YFLlimJSuKjYBCX8YBN3TWffMHelQBSv0uIZhC/4ISzcnkyKVu.9bbYX4SmTqUt37mQhYFXxpny23/";
   };
 
-  home-manager.users.bpaulin = { pkgs, ... }: {
+  home-manager.users.bpaulin = { ... }: {
     home.username = "bpaulin";
     home.homeDirectory = "/home/bpaulin";
 

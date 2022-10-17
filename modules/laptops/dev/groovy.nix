@@ -1,7 +1,7 @@
 ##
 # Groovy toolbox
 ##
-{ pkgs, ... }:
+{ ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
 

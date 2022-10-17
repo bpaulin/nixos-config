@@ -1,7 +1,7 @@
 ##
 # Java toolbox
 ##
-{ pkgs, ... }:
+{ ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
 

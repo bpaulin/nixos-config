@@ -1,7 +1,7 @@
 ##
 # Useless things ... i want them everywhere
 ##
-{ pkgs, ... }:
+{ ... }:
 {
   home-manager.users.bpaulin = { pkgs, ... }: {
     home.packages = with pkgs; [

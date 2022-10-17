@@ -1,6 +1,6 @@
-{ pkgs, ... }:
+{ ... }:
 {
-  home-manager.users.bpaulin = { pkgs, ... }: {
+  home-manager.users.bpaulin = { ... }: {
 
     programs = {
       ssh = {

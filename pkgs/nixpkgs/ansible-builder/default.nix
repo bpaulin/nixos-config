@@ -1,4 +1,4 @@
-{ lib, python3Packages }:
+{ python3Packages }:
 let
   bindep = python3Packages.buildPythonPackage rec {
     pname = "bindep";

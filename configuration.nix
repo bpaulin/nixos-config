@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 {
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "22.05";

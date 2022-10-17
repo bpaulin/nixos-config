@@ -1,4 +1,4 @@
-{ lib, fetchFromGitHub, buildGoModule }:
+{ fetchFromGitHub, buildGoModule }:
 
 buildGoModule rec{
   pname = "polaris";
