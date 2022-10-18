@@ -41,6 +41,7 @@
       # System
       ./system/print.nix
       ./system/fonts.nix
+      ./system/user.nix
 
       # Not classified yet...
       ./mess.nix
