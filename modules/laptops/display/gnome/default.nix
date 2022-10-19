@@ -62,6 +62,7 @@
       };
       "org/gnome/desktop/background" = {
         picture-uri = "file:///home/bpaulin/.local/share/backgrounds/sillywalk.jpg";
+        picture-uri-dark = "file:///home/bpaulin/.local/share/backgrounds/sillywalk.jpg";
       };
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
