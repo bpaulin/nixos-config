@@ -23,5 +23,14 @@
       allowDiscards = true;
     };
   };
+
+  home-manager.users.bpaulin = { ... }: {
+    dconf.settings = {
+      "org/gnome/desktop/a11y" = {
+        # old geek on couch: fast access to large text
+        always-show-universal-access-status = true;
+      };
+    };
+  };
 }
 

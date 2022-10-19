@@ -33,6 +33,7 @@
       "org/gnome/desktop/peripherals/touchpad" = {
         # to have touchpad and mouse behave the same way
         natural-scroll = false;
+        tap-to-click = true;
       };
       "org/gnome/shell/app-switcher" = {
         # Limit switcher to current workspace.
@@ -52,10 +53,6 @@
           # terminal
           "terminator.desktop"
         ];
-      };
-      "org/gnome/desktop/a11y" = {
-        # old geek on couch: fast access to large text
-        always-show-universal-access-status = true;
       };
       "org/gnome/desktop/wm/preferences" = {
         button-layout = "appmenu:minimize,maximize,close";
