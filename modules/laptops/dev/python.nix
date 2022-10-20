@@ -18,6 +18,7 @@ let
       cryptography
       jmespath
       ansible-core
+      hvac
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
