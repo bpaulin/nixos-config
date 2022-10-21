@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   environment.shells = [ pkgs.zsh pkgs.bashInteractive ];
 
@@ -16,12 +16,22 @@
     hashedPassword = "$6$MDaoHcbuSiJQR83L$unAvaWD6YFLlimJSuKjYBCX8YBN3TWffMHelQBSv0uIZhC/4ISzcnkyKVu.9bbYX4SmTqUt37mQhYFXxpny23/";
   };
 
-  home-manager.users.bpaulin = { ... }: {
-    home.username = "bpaulin";
-    home.homeDirectory = "/home/bpaulin";
+  home-manager.users.bpaulin = { config, ... }: {
+    options = {
+      id_pub = {
+        bpaulin = lib.mkOption {
+          type = lib.types.str;
+        };
+      };
+    };
 
-    programs.home-manager.enable = true;
+    config = {
+      home.username = "bpaulin";
+      home.homeDirectory = "/home/bpaulin";
 
-    home.stateVersion = "22.05";
+      programs.home-manager.enable = true;
+
+      home.stateVersion = "22.05";
+    };
   };
 }

@@ -1,10 +1,34 @@
-{ ... }:
+{ lib, ... }:
 
 {
-  home-manager.users.bpaulin = { pkgs, ... }: {
-    home.packages = with pkgs; [
-      go-jira
-      slack
-    ];
+  home-manager.users.bpaulin = { pkgs, config, ... }: {
+    options = {
+      id_pub = {
+        oneup = lib.mkOption {
+          type = lib.types.str;
+        };
+      };
+    };
+
+    config = {
+      home.packages = with pkgs; [
+        go-jira
+        slack
+      ];
+
+      programs.git = {
+        includes = [
+          {
+            condition = "gitdir:**/*github.com/myERP/**";
+            contents = {
+              user = {
+                email = "bruno@oneup.com";
+                signingKey = config.id_pub.oneup;
+              };
+            };
+          }
+        ];
+      };
+    };
   };
 }

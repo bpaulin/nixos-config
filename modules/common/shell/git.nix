@@ -3,7 +3,7 @@
 ##
 { ... }:
 {
-  home-manager.users.bpaulin = { pkgs, ... }: {
+  home-manager.users.bpaulin = { pkgs, config, ... }: {
 
     home.packages = with pkgs; [
       # clone any repo in a predictive path
@@ -32,9 +32,13 @@
           "gpg" = {
             format = "ssh";
           };
+          "commit" = {
+            gpgSign = true;
+          };
           user = {
             name = "Bruno Paulin";
             email = "brunopaulin@bpaulin.net";
+            signingKey = config.id_pub.bpaulin;
           };
         };
 

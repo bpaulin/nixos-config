@@ -28,20 +28,10 @@
   };
 
   home-manager.users.bpaulin = { ... }: {
-    programs = {
-      git = {
-        extraConfig = {
-          "commit" = {
-            gpgSign = true;
-          };
-          user = {
-            signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/VsidDLXw+2KKToJfqgP9ka7FdYSnIhPGgNYrOhNzu bpaulin@lithium";
-          };
-        };
-      };
+    id_pub = {
+      bpaulin = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/VsidDLXw+2KKToJfqgP9ka7FdYSnIhPGgNYrOhNzu bpaulin@lithium";
+      oneup = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJuRSdnnq+IFIDI6xi1vGQCZWBSvBoTOP9SQu/RkVo0l oneup@lithium";
     };
   };
-
-
 }
 
