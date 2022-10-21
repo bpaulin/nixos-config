@@ -21,15 +21,3 @@ fi
 ## Link to machine
 rm -f machines/local
 ln -s $target_machine machines/local
-
-#################
-# Decrypt secrets
-
-## Check key file
-if [ -f age.txt ]
-then
-    export SOPS_AGE_KEY_FILE="age.txt"
-fi
-
-## decrypt
-sops --decrypt modules/work/current/secrets.enc.json > modules/work/current/secrets.json

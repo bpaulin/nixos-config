@@ -15,18 +15,17 @@ It expects a symlink **local** in **machines/**, targeting the real machine fold
 
 machine's configuration.nix imports modules:
 
- * **common** is basic config, for terminal, that I want everywhere
+ * **common** is basic shell config that I want everywhere
  * **laptops** is everything I need to geek like gnome env, browser and vscode
  * **servers** is mostly ssh and k3s config
- * **work** is specific configs for my current and next job
+ * **work** is specific configs for my job
  * **games** is steam (and maybe shadow)
 
-| machine     | status                         | [common] | [laptops] | [servers] | [work] | [games] |
-| ----------- | ------------------------------ | -------- | --------- | --------- | ------ | ------- |
-| [helium]    | my current work laptop         | ✅        | ✅         | ❌         | ✅      | ❌       |
-| [lithium]   | my current personal laptop     | ✅        | ✅         | ❌         | ❌      | ✅       |
-| [beryllium] | my personal server             | ✅        | ❌         | ✅         | ❌      | ❌       |
-| [bore]      | my next work laptop (expected) | ✅        | ✅         | ❌         | ✅      | ❌       |
+| machine     | status                    | [common] | [laptops] | [servers] | [work] | [games] |
+| ----------- | ------------------------- | -------- | --------- | --------- | ------ | ------- |
+| [lithium]   | my personal laptop        | ✅        | ✅         | ❌         | ❌      | ✅       |
+| [beryllium] | my personal server        | ✅        | ❌         | ✅         | ❌      | ❌       |
+| [bore]      | my work laptop (expected) | ✅        | ✅         | ❌         | ✅      | ❌       |
 
 
 ## Install
@@ -43,7 +42,6 @@ see [REFERENCES.md](REFERENCES.md)
 [work]: modules/work
 [games]: modules/games
 
-[helium]: machines/helium
 [lithium]: machines/lithium
 [beryllium]: machines/beryllium
 [bore]: machines/bore
