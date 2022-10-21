@@ -3,7 +3,7 @@
 
   services.xserver.desktopManager.gnome.enable = true;
 
-  home-manager.users.bpaulin = { pkgs, ... }: {
+  home-manager.users.bpaulin = { pkgs, lib, ... }: {
 
     home.file = {
       ".local/share/backgrounds/sillywalk.jpg".source = ./../sillywalk.jpg;
@@ -63,6 +63,10 @@
       };
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
+      };
+      "org/gnome/settings-daemon/plugins/color" = {
+        night-light-enabled = true;
+        night-light-temperature = lib.hm.gvariant.mkUint32 3700;
       };
     };
   };
