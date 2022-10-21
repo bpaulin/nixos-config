@@ -1,7 +1,3 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { ... }:
 
 {
@@ -17,4 +13,20 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
+
+  home-manager.users.bpaulin = { ... }: {
+    programs = {
+      git = {
+        extraConfig = {
+          "commit" = {
+            gpgSign = true;
+          };
+          user = {
+            signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIArE9LfMabG3bqYh1SFO6+nEr4c4wmzne+a/+ilG8O6P bpaulin@beryllium";
+          };
+        };
+      };
+    };
+  };
+
 }
