@@ -114,4 +114,12 @@ sudo nix-channel --add https://github.com/NixOS/nixos-hardware/archive/master.ta
 sudo nix-channel --add https://github.com/ryantm/agenix/archive/main.tar.gz agenix
 sudo nix-channel --add https://nixos.org/channels/nixos-22.05 nixos
 sudo nix-channel --update
+# Generate keys
+users=( bpaulin oneup )
+m=`hostname`
+for u in "${users[@]}"
+do
+      echo "${u}_${m}"
+      ssh-keygen -q -t ed25519 -f ~/.ssh/id_ed25519_${u} -C "${u}@${m}" -N "$SSH_KEY_PASSPHRASE"
+done
 ```

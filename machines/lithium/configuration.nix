@@ -35,7 +35,7 @@
             gpgSign = true;
           };
           user = {
-            signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICLatnqf7B6dDnH9NepGdgo5xwNq4Zn7Lq/qrtuzSodF brunopaulin@bpaulin.net";
+            signingKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/VsidDLXw+2KKToJfqgP9ka7FdYSnIhPGgNYrOhNzu bpaulin@lithium";
           };
         };
       };
