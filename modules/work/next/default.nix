@@ -14,6 +14,8 @@
       home.packages = with pkgs; [
         go-jira
         slack
+        bitwarden
+        bitwarden-cli
       ];
 
       programs.git = {
