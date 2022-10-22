@@ -23,7 +23,7 @@
     programs.shadow-client = {
       # Enabled by default when using import
       # enable = true;
-      channel = "preprod";
+      channel = "prod";
     };
 
     home.packages = with pkgs; [
