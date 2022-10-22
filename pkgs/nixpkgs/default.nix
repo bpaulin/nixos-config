@@ -1,7 +1,8 @@
 _self: super:
 {
-  pinniped = super.callPackage ./pinniped { };
-  vault-medusa = super.callPackage ./vault-medusa { };
+  # merged on nixpkgs \o/
+  # pinniped = super.callPackage ./pinniped { };
+  # vault-medusa = super.callPackage ./vault-medusa { };
   infracost = super.callPackage ./infracost { };
   molecule = super.callPackage ./molecule { };
   ansible-builder = super.callPackage ./ansible-builder { };
