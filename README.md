@@ -19,7 +19,7 @@ machine's configuration.nix imports modules:
  * **laptops** is everything I need to geek like gnome env, browser and vscode
  * **servers** is mostly ssh and k3s config
  * **work** is specific configs for my job
- * **games** is steam (and maybe shadow)
+ * **games** is steam and shadow
 
 | machine     | status                    | [common] | [laptops] | [servers] | [work] | [games] |
 | ----------- | ------------------------- | -------- | --------- | --------- | ------ | ------- |
