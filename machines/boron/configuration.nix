@@ -1,7 +1,7 @@
 { ... }:
 
 {
-  networking.hostName = "bore";
+  networking.hostName = "boron";
 
   imports = [
     ./../../modules/laptops

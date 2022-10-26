@@ -25,7 +25,7 @@ machine's configuration.nix imports modules:
 | ----------- | ------------------------- | -------- | --------- | --------- | ------ | ------- |
 | [lithium]   | my personal laptop        | ✅        | ✅         | ❌         | ❌      | ✅       |
 | [beryllium] | my personal server        | ✅        | ❌         | ✅         | ❌      | ❌       |
-| [bore]      | my work laptop (expected) | ✅        | ✅         | ❌         | ✅      | ❌       |
+| [boron]     | my work laptop (expected) | ✅        | ✅         | ❌         | ✅      | ❌       |
 
 
 ## Install
@@ -44,4 +44,4 @@ see [REFERENCES.md](REFERENCES.md)
 
 [lithium]: machines/lithium
 [beryllium]: machines/beryllium
-[bore]: machines/bore
+[boron]: machines/boron
