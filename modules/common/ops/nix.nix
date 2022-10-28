@@ -11,8 +11,6 @@
       nixos-option
       # Language server
       rnix-lsp
-      # Packages tools
-      node2nix # node
     ];
 
     programs = {

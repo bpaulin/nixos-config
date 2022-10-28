@@ -14,7 +14,6 @@
 
     programs = {
       vscode = {
-
         userSettings = {
           "terraform.languageServer" = {
             "external" = true;
@@ -28,8 +27,7 @@
         };
         extensions = with pkgs.vscode-extensions; [
           hashicorp.terraform
-        ] ++
-        pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
             name = "tfsec";
             publisher = "tfsec";
