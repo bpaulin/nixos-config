@@ -3,7 +3,7 @@
 {
 
   imports = [
-    ./shadow.nix
+    # ./shadow.nix
     ./steam.nix
   ];
 
