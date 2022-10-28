@@ -7,7 +7,7 @@
 
     home.packages = with pkgs; [
       # clone any repo in a predictive path
-      ghq
+      git-get
       # clean merged branch
       git-trim
     ];
@@ -23,7 +23,7 @@
             rebase = false;
           };
           # Path to all my repos
-          "ghq" = {
+          "gitget" = {
             root = "~/repos";
           };
           "credential" = {
