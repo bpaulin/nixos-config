@@ -35,6 +35,7 @@
           "diffEditor.ignoreTrimWhitespace" = false;
           "window.openFoldersInNewWindow" = "on";
           "workbench.startupEditor" = "none";
+          "window.titleBarStyle" = "custom";
         };
       };
     };
