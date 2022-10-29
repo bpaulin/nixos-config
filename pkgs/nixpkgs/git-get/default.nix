@@ -15,7 +15,7 @@ buildGoModule rec{
   doCheck = true;
   checkInputs = [ pkgs.git ];
   preCheck = ''
-    export HOME=$(pwd)
+    export HOME=`mktemp -d`
     git config --global user.email "user@example.com"
     git config --global user.user "user"
     # this test tries to access /root

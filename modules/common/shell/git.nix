@@ -10,6 +10,8 @@
       git-get
       # clean merged branch
       git-trim
+      # last day commits
+      git-standup
     ];
 
     programs = {
