@@ -18,18 +18,25 @@
         bitwarden-cli
       ];
 
-      programs.git = {
-        includes = [
-          {
-            condition = "gitdir:**/*github.com/myERP/**";
-            contents = {
-              user = {
-                email = "bruno@oneup.com";
-                signingKey = config.id_pub.oneup;
+      programs = {
+        git = {
+          includes = [
+            {
+              condition = "gitdir:**/*github.com/myERP/**";
+              contents = {
+                user = {
+                  email = "bruno@oneup.com";
+                  signingKey = config.id_pub.oneup;
+                };
               };
-            };
-          }
-        ];
+            }
+          ];
+        };
+        ssh = {
+          extraConfig = "
+IdentityFile /home/bpaulin/.ssh/id_ed25519_oneup
+        ";
+        };
       };
     };
   };

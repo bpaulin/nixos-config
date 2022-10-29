@@ -1,9 +1,8 @@
-{ lib, fetchFromGitHub, buildGoModule }:
+{ lib, fetchFromGitHub, buildGoModule, pkgs }:
 
 buildGoModule rec{
   pname = "git-get";
   version = "0.5.0";
-  doCheck = false;
 
   src = fetchFromGitHub {
     owner = "grdl";
@@ -11,8 +10,17 @@ buildGoModule rec{
     rev = "v${version}";
     sha256 = "BantFytvr+grCZjUME9Hm3k+8c+NcNYnKuagrUrQOww=";
   };
-
   vendorSha256 = "C+XOjMDMFneKJNeBh0KWPx8yM7XiiIpTlc2daSfhZhY=";
+
+  doCheck = true;
+  checkInputs = [ pkgs.git ];
+  preCheck = ''
+    export HOME=$(pwd)
+    git config --global user.email "user@example.com"
+    git config --global user.user "user"
+    # this test tries to access /root
+    rm pkg/git/finder_test.go
+  '';
 
   ldflags = [
     "-s"
