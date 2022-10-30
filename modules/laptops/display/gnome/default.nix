@@ -3,6 +3,10 @@
 
   services.xserver.desktopManager.gnome.enable = true;
 
+  imports = [
+    ./just-perfection.nix
+  ];
+
   home-manager.users.bpaulin = { pkgs, lib, ... }: {
 
     home.file = {
