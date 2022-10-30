@@ -10,7 +10,7 @@
   home-manager.users.bpaulin = { pkgs, lib, ... }: {
 
     home.file = {
-      ".local/share/backgrounds/sillywalk.jpg".source = ./../sillywalk.jpg;
+      ".local/share/backgrounds/wallpaper.png".source = ./../../../../machines/local/wallpaper.png;
     };
 
     home.packages = with pkgs; [
@@ -62,8 +62,9 @@
         button-layout = "appmenu:minimize,maximize,close";
       };
       "org/gnome/desktop/background" = {
-        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/sillywalk.jpg";
-        picture-uri-dark = "file:///home/bpaulin/.local/share/backgrounds/sillywalk.jpg";
+        picture-uri = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.png";
+        picture-uri-dark = "file:///home/bpaulin/.local/share/backgrounds/wallpaper.png";
+        picture-options = "scaled";
       };
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
