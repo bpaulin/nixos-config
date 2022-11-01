@@ -18,13 +18,22 @@
 
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
+  boot.loader.efi.efiSysMountPoint = "/boot/efi"; # why?
+
+  # Setup keyfile
+  boot.initrd.secrets = {
+    "/crypto_keyfile.bin" = null;
+  };
+
+  # Enable swap on luks
+  boot.initrd.luks.devices."luks-be88c213-2621-464e-8a95-9a0bfc693603".device = "/dev/disk/by-uuid/be88c213-2621-464e-8a95-9a0bfc693603";
+  boot.initrd.luks.devices."luks-be88c213-2621-464e-8a95-9a0bfc693603".keyFile = "/crypto_keyfile.bin";
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
   home-manager.users.bpaulin = { ... }: {
     id_pub = {
-      bpaulin = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcmR6S6hpKRX8mTrNtfexDOAmO1FTb93Hxo6ne3clXB bpaulin@boron ";
-      oneup = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBIpyRf1jY2f4fWQvJFYC98MX/LwbSWu8zBs+0iwEPQN oneup@boron";
+      bpaulin = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAKJV5Cl4HA7wlZPtkVLsU9LuIRJ+5B13bucTvmSxPlh bpaulin@boron";
+      oneup = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINLZ5gmGeAlOC/NZQ9sSD8kvZTcOqkE79c2t2xL20VTI oneup@boron";
     };
   };
   hardware.nvidia.prime = {
