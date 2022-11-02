@@ -13,7 +13,7 @@
         ];
       };
       "org/gnome/shell/extensions/just-perfection" = {
-        panel = false;
+        panel = true;
         panel-in-overview = true;
       };
     };

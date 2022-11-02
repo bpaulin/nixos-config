@@ -1,6 +1,11 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 
 {
+
+  environment.systemPackages = with pkgs; [
+    networkmanager-openvpn
+  ];
+
   home-manager.users.bpaulin = { pkgs, config, ... }: {
     options = {
       id_pub = {
@@ -16,6 +21,8 @@
         slack
         bitwarden
         bitwarden-cli
+        openldap
+        authy
       ];
 
       programs = {
@@ -25,7 +32,16 @@
               condition = "gitdir:**/*github.com/myERP/**";
               contents = {
                 user = {
-                  email = "bruno@oneup.com";
+                  email = "bruno@myerp.com";
+                  signingKey = config.id_pub.oneup;
+                };
+              };
+            }
+            {
+              condition = "gitdir:**/*github.com/bpaulin-oneup/**";
+              contents = {
+                user = {
+                  email = "bruno@myerp.com";
                   signingKey = config.id_pub.oneup;
                 };
               };
