@@ -19,6 +19,7 @@ let
       jmespath
       ansible-core
       hvac
+      boto3
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in
