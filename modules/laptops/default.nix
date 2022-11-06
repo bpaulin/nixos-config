@@ -43,6 +43,7 @@
       ./system/print.nix
       ./system/fonts.nix
       ./system/user.nix
+      ./system/thermal.nix
 
       # Not classified yet...
       ./mess.nix
