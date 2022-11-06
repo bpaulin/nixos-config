@@ -37,6 +37,7 @@
 
       # Medias
       ./medias/image.nix
+      ./medias/pdf.nix
 
       # System
       ./system/print.nix
