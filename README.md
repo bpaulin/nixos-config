@@ -21,11 +21,11 @@ machine's configuration.nix imports modules:
  * **work** is specific configs for my job
  * **games** is more or less steam
 
-| machine     | status                    | [common] | [laptops] | [servers] | [work] | [games] |
-| ----------- | ------------------------- | -------- | --------- | --------- | ------ | ------- |
-| [lithium]   | my personal laptop        | ✅        | ✅         | ❌         | ❌      | ✅       |
-| [beryllium] | my personal server        | ✅        | ❌         | ✅         | ❌      | ❌       |
-| [boron]     | my work laptop (expected) | ✅        | ✅         | ❌         | ✅      | ❌       |
+| machine     | status             | [common] | [laptops] | [servers] | [work] | [games] |
+| ----------- | ------------------ | -------- | --------- | --------- | ------ | ------- |
+| [lithium]   | my personal laptop | ✅        | ✅         | ❌         | ❌      | ✅       |
+| [beryllium] | my personal server | ✅        | ❌         | ✅         | ❌      | ❌       |
+| [boron]     | my work laptop     | ✅        | ✅         | ❌         | ✅      | ❌       |
 
 
 ## Install

@@ -6,7 +6,6 @@
   imports = [
     ./../../modules/laptops
     ./../../modules/games
-    ./../../modules/work
     <nixos-hardware/common/pc/ssd>
     <nixos-hardware/common/pc/laptop>
     <nixos-hardware/common/cpu/intel>
@@ -30,7 +29,7 @@
   home-manager.users.bpaulin = { ... }: {
     id_pub = {
       bpaulin = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK/VsidDLXw+2KKToJfqgP9ka7FdYSnIhPGgNYrOhNzu bpaulin@lithium";
-      oneup = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJuRSdnnq+IFIDI6xi1vGQCZWBSvBoTOP9SQu/RkVo0l oneup@lithium";
+      # oneup = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJuRSdnnq+IFIDI6xi1vGQCZWBSvBoTOP9SQu/RkVo0l oneup@lithium";
     };
   };
 }
