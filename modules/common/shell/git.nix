@@ -42,6 +42,9 @@
             email = "brunopaulin@bpaulin.net";
             signingKey = config.id_pub.bpaulin;
           };
+          "core" = {
+            sshCommand = "ssh -i ~/.ssh/id_ed25519_bpaulin -o IdentitiesOnly=yes -F /dev/null";
+          };
         };
 
         # Better looking diff

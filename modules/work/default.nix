@@ -35,6 +35,9 @@
                   email = "bruno@myerp.com";
                   signingKey = config.id_pub.oneup;
                 };
+                core = {
+                  sshCommand = "ssh -i ~/.ssh/id_ed25519_oneup -o IdentitiesOnly=yes -F /dev/null";
+                };
               };
             }
             {
@@ -43,6 +46,9 @@
                 user = {
                   email = "bruno@myerp.com";
                   signingKey = config.id_pub.oneup;
+                };
+                core = {
+                  sshCommand = "ssh -i ~/.ssh/id_ed25519_oneup -o IdentitiesOnly=yes -F /dev/null";
                 };
               };
             }
