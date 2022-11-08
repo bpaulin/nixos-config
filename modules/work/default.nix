@@ -26,6 +26,11 @@
       ];
 
       programs = {
+        zsh = {
+          initExtra = "
+test -f $HOME/.oneup.sh && source $HOME/.oneup.sh
+";
+        };
         git = {
           includes = [
             {
@@ -57,7 +62,7 @@
         ssh = {
           extraConfig = "
 IdentityFile /home/bpaulin/.ssh/id_ed25519_oneup
-        ";
+";
         };
       };
     };

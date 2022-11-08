@@ -38,6 +38,7 @@
       glances
       psmisc
       go-task
+      pwgen
     ];
 
     programs = {
