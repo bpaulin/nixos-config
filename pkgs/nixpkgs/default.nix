@@ -8,4 +8,5 @@ _self: super:
   ansible-builder = super.callPackage ./ansible-builder { };
   polaris = super.callPackage ./polaris { };
   git-get = super.callPackage ./git-get { };
+  krew = super.callPackage ./krew { };
 }

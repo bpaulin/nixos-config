@@ -12,6 +12,8 @@
       pinniped
       # Check best practices
       polaris
+      # Plugin managet
+      krew
     ];
 
     programs = {
