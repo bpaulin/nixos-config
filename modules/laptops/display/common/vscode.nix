@@ -36,6 +36,7 @@
           "window.openFoldersInNewWindow" = "on";
           "workbench.startupEditor" = "none";
           "window.titleBarStyle" = "custom";
+          "git.autofetch" = true;
         };
       };
     };
