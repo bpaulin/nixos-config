@@ -59,11 +59,6 @@ test -f $HOME/.oneup.sh && source $HOME/.oneup.sh
             }
           ];
         };
-        ssh = {
-          extraConfig = "
-IdentityFile /home/bpaulin/.ssh/id_ed25519_oneup
-";
-        };
       };
     };
   };
