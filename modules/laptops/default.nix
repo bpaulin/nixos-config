@@ -25,6 +25,7 @@
 
       # Ops tools
       ./ops/terraform.nix
+      ./ops/packer.nix
       ./ops/libvirt.nix
       ./ops/cloud.nix
       ./ops/sops.nix

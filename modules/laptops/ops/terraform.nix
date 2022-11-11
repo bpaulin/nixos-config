@@ -10,6 +10,7 @@
       tfsec
       tflint
       terrascan
+      terraform-docs
     ];
 
     programs = {
