@@ -23,6 +23,12 @@
             version = "2.10.1";
             sha256 = "03cx684mn0nk47xpm46dly8g0lxars5h46vj41p8nhgsq9429rhm";
           }
+          {
+            name = "remote-ssh-edit";
+            publisher = "ms-vscode-remote";
+            version = "0.84.0";
+            sha256 = "sha256-33jHWC8K0TWJG54m6FqnYEotKqNxkcd/D14TFz6dgmc=";
+          }
         ];
         userSettings = {
           "terminal.integrated.fontFamily" = "Source Code Pro";
