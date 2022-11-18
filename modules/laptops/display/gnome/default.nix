@@ -1,5 +1,9 @@
 { ... }:
 {
+  # until https://github.com/NixOS/nixpkgs/pull/201229/commits/808095530a618c70e81c9f2423273860cfbed4d0 is on master
+  nixpkgs.overlays = [
+    (import ../../../../pkgs/overlays/gnome-keyring.nix)
+  ];
 
   services.xserver.desktopManager.gnome.enable = true;
 
