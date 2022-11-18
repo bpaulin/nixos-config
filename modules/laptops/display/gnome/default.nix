@@ -17,6 +17,9 @@
       ".local/share/backgrounds/wallpaper.png" = {
         source = ./../../../../machines/local/wallpaper.png;
       };
+      ".face" = {
+        source = ./../../../../machines/local/face;
+      };
     };
     gtk.gtk3.bookmarks = [
       "file:///home/bpaulin/repos"

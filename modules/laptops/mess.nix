@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   nixpkgs.overlays = [
-    # (import ../../pkgs/overlays/OVERLAY.nix)
+    # overlays
   ];
 
   environment.systemPackages = with pkgs; [
