@@ -12,6 +12,8 @@
       git-trim
       # last day commits
       git-standup
+      # search for secrets in git
+      gitleaks
     ];
 
     programs = {

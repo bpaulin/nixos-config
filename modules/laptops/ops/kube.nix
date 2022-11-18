@@ -12,7 +12,7 @@
       pinniped
       # Check best practices
       polaris
-      # Plugin managet
+      # Plugin manager
       krew
     ];
 

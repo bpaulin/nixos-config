@@ -14,8 +14,13 @@
   home-manager.users.bpaulin = { pkgs, lib, ... }: {
 
     home.file = {
-      ".local/share/backgrounds/wallpaper.png".source = ./../../../../machines/local/wallpaper.png;
+      ".local/share/backgrounds/wallpaper.png" = {
+        source = ./../../../../machines/local/wallpaper.png;
+      };
     };
+    gtk.gtk3.bookmarks = [
+      "file:///home/bpaulin/repos"
+    ];
 
     home.packages = with pkgs; [
       # to allow nix to set gnome settings

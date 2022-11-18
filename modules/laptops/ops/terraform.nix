@@ -11,6 +11,7 @@
       tflint
       terrascan
       terraform-docs
+      terraformer
     ];
 
     programs = {
