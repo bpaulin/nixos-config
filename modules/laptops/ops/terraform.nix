@@ -12,6 +12,7 @@
       terrascan
       terraform-docs
       terraformer
+      terragrunt
     ];
 
     programs = {
