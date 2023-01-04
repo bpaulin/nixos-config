@@ -14,7 +14,7 @@
       # network tools
       curl
       wget
-      # httpie
+      httpie
       ldns
       bind
       openssl
