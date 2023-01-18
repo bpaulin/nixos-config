@@ -10,8 +10,9 @@
     <nixos-hardware/common/pc/laptop>
     <nixos-hardware/common/cpu/intel>
     <nixos-hardware/common/gpu/intel.nix>
-    <nixos-hardware/common/gpu/nvidia.nix>
-    # <nixos-hardware/common/gpu/nvidia-disable.nix>
+    <nixos-hardware/common/gpu/nvidia>
+    <nixos-hardware/common/gpu/nvidia/prime.nix>
+    # <nixos-hardware/common/gpu/nvidia/disable.nix>
   ];
 
   services.thermald.enable = true;

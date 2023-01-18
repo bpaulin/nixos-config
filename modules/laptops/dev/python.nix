@@ -21,6 +21,9 @@ let
       hvac
       boto3
       openshift
+      psycopg
+      elasticsearch
+      redis
     ];
   python-with-my-packages = python3.withPackages my-python-packages;
 in

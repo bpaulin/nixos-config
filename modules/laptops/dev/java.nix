@@ -9,6 +9,8 @@
       maven
       lombok
       # eclipses.eclipse-jee
+      jetbrains.idea-community
+      gradle
     ];
 
     programs.java.enable = true;

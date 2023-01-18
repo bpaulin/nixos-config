@@ -10,6 +10,7 @@
           eamodio.gitlens
           github.vscode-pull-request-github
           marp-team.marp-vscode
+          ms-vscode-remote.remote-ssh
         ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
             name = "code-spell-checker-french";

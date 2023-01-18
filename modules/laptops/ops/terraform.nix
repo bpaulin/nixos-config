@@ -8,6 +8,8 @@
       tfk8s
       infracost
       tfsec
+      trivy
+      driftctl
       tflint
       terrascan
       terraform-docs

@@ -9,7 +9,7 @@
     home.packages = with pkgs; [
       # json/yaml
       dyff
-      yq
+      yq-go
       fx
       # network tools
       curl
