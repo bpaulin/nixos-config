@@ -37,7 +37,7 @@
             name = "tfsec";
             publisher = "tfsec";
             version = "1.11.0";
-            sha256 = "sha256-gIzdcDpvTDhGwTOGBrbY8Y2BAa/n5qrazFNwwFcBc28=";
+            sha256 = "0vvk05bw0w2krkdamrp7mw0q33giv2v0d1ikq533hk3g79qdv340";
           }
         ];
       };

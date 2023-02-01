@@ -8,10 +8,10 @@
     programs.vscode = {
       extensions = pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         {
-          name = "Tiltfile";
+          name = "tiltfile";
           publisher = "tilt-dev";
           version = "0.0.3";
-          sha256 = "sha256-KQ+jmVwHH/9iqmS6mYGxZMMmVisI2FqMMCDUi9AJCcY=";
+          sha256 = "1ih91788pm106265mn085db2dhv4n60rkfk4m9igy7q7bjcs63r9";
         }
       ];
     };

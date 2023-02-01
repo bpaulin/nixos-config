@@ -12,8 +12,8 @@
         {
           name = "signageos-vscode-sops";
           publisher = "signageos";
-          version = "0.6.1";
-          sha256 = "0a2hdwnd0hsyhnx3bmwjn6y9a8lz7cgzgrar8yrp249yywhy4xbw";
+          version = "0.7.1";
+          sha256 = "0n4z3s6wkx6dkigiarcrq8vslax045lm53chsilsxrfdq0232g72";
         }
       ];
     };

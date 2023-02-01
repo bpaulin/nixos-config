@@ -19,6 +19,7 @@
       bind
       openssl
       nssTools
+      mtr
       # disk
       ncdu
       duf

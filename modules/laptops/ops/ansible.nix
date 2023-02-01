@@ -17,13 +17,13 @@
             name = "ansible-vault-inline";
             publisher = "wolfmah";
             version = "0.4.0";
-            sha256 = "sha256-pU2tKnYKZ/w02fD3BonrYByB+bsxx4ycqDO3q5ltzt4=";
+            sha256 = "1pnfdncspdrkm2f8riripgwq2730xf4hdxzhv4sgqrqafqmaskd5";
           }
           {
             name = "ansible";
             publisher = "redhat";
-            version = "1.0.92";
-            sha256 = "1r35ximw1v91615gfrn6z52l8xcj5n6s6p1p74x3b339m4ds14xx";
+            version = "1.1.34";
+            sha256 = "0ca0rhw6fx49ycv9pih7zhn6hw5gqh3h6darcl0rlamnjx11n82k";
           }
         ];
       };

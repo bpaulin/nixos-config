@@ -7,7 +7,7 @@
 
     home.packages = with pkgs; [
       # clone any repo in a predictive path
-      git-get
+      # git-get
       # clean merged branch
       git-trim
       # last day commits

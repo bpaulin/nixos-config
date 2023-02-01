@@ -35,6 +35,7 @@
       ./ops/docker.nix
       ./ops/ansible.nix
       ./ops/tilt.nix
+      ./ops/db.nix
 
       # Medias
       ./medias/image.nix

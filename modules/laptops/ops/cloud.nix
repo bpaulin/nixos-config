@@ -7,9 +7,11 @@
       google-cloud-sdk
       awscli2
       eksctl
+      aws-workspaces
       heroku
       nodePackages.firebase-tools
       ngrok
+      teleport
     ];
 
     programs = {

@@ -22,6 +22,7 @@ in
       kube-prompt
       # Cluster/namespace switcher
       kubectx
+      kubie
       # Terminal UI
       k9s
       # Helm deployments

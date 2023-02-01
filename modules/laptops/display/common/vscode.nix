@@ -13,22 +13,16 @@
           ms-vscode-remote.remote-ssh
         ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
-            name = "code-spell-checker-french";
-            publisher = "streetsidesoftware";
-            version = "0.2.3";
-            sha256 = "020fr4rm8d3gwvwymrzcj3zfnac6xqchpiwz4gdwdi7sx53c35jw";
-          }
-          {
             name = "code-spell-checker";
             publisher = "streetsidesoftware";
-            version = "2.10.1";
-            sha256 = "03cx684mn0nk47xpm46dly8g0lxars5h46vj41p8nhgsq9429rhm";
+            version = "2.14.0";
+            sha256 = "0473vlyni3kz09xbw1bk0zzz685lyi9n3qvyga6ajnk60g9i1xqf";
           }
           {
-            name = "remote-ssh-edit";
-            publisher = "ms-vscode-remote";
-            version = "0.84.0";
-            sha256 = "sha256-33jHWC8K0TWJG54m6FqnYEotKqNxkcd/D14TFz6dgmc=";
+            name = "code-spell-checker-french";
+            publisher = "streetsidesoftware";
+            version = "0.2.4";
+            sha256 = "1hjar1nrdhmykf9pvqbjxa000qp0khlq74x3z564gm8vqnvnxrq2";
           }
         ];
         userSettings = {
