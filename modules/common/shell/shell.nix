@@ -80,7 +80,7 @@
         cat = "bat --paging=never";
       };
       shellAliases = {
-        ls = "exa";
+        ls = "eza";
       };
     };
   };
