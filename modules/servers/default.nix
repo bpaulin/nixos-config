@@ -3,6 +3,7 @@
   imports = [
     ./k3s.nix
     ./openssh.nix
+    ./compose.nix
   ];
 
   users.users.bpaulin = {

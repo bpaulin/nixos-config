@@ -7,7 +7,7 @@
     ./../../modules/servers
     <nixos-hardware/common/pc/ssd>
     <nixos-hardware/common/cpu/intel>
-    <nixos-hardware/common/gpu/intel.nix>
+    <nixos-hardware/common/gpu/intel>
   ];
 
   boot.loader.systemd-boot.enable = true;

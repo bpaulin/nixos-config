@@ -35,7 +35,7 @@
       glow
       ripgrep
       tldr
-      exa
+      eza
       glances
       psmisc
       go-task
@@ -59,7 +59,9 @@
       zsh = {
         enable = true;
         enableAutosuggestions = true;
-        enableSyntaxHighlighting = true;
+        syntaxHighlighting = {
+          enable = true;
+        };
         enableCompletion = true;
         initExtra = "
         eval $(thefuck --alias)
